@@ -28,6 +28,10 @@ html {
     line-height: 1.32;
     /* scroll-behavior: smooth; */
 
+    @media (max-width: 768px) {
+        line-height: 1.28;
+    }
+
     --mobile-viewport-min: 320;
     --mobile-desktop-breakpoint: 768;
     --desktop-viewport-max: 1500;
@@ -140,6 +144,8 @@ h1 {
     @media (max-width: 768px) {
         font-size: 1em;
         width: 80%;
+        line-height: 1.28;
+        margin: 0 0 .6em;
     }
 
     & span {
@@ -151,7 +157,11 @@ h1 {
 
 h2 {
     font-size: 1em;
-    margin-bottom: 0.4em;
+    margin-bottom: 0.8em;
+
+    @media (max-width: 768px) {
+        line-height: 1.2;
+    }
 }
 
 a {
@@ -174,138 +184,15 @@ a:hover {
 p {
     margin: 0 0 0.8em;
 
+    @media (max-width: 768px) {
+        margin: 0 0 1.2em;
+    }
+
     &:last-of-type {
         margin: 0;
     }
 }
 
-.nav {
-    display: flex;
-    flex-wrap: wrap;
-    --gap: 0.5em;
-    gap: var(--gap);
-
-    & a {
-        position: relative;
-        display: block;
-        width: calc((100% - var(--gap) * 3) / 4);
-        height: 7em;
-        background-color: rgba(var(--surface-color-RGB), 0.5);
-        transition: background-color 0.5s ease;
-        border-radius: 0.3em;
-        padding: 0.5em;
-        text-decoration: none;
-        color: rgba(var(--text-color-RGB), 1);
-
-        @media (max-width: 768px) {
-            width: calc((100% - var(--gap) * 1) / 2);
-        }
-
-        &:first-child {
-            width: calc((100% - var(--gap)) / 2);
-
-            @media (max-width: 768px) {
-                width: 100%;
-            }
-        }
-
-
-        & .nav-icon {
-            position: absolute;
-            left: 0.7em;
-            bottom: 0.5em;
-
-            & svg {
-                width: 3em;
-
-                & .nav-icon-basic {
-                    fill: transparent;
-                    stroke: rgba(var(--text-color-RGB), 1);
-                    stroke-miterlimit: 10;
-                    stroke-width: .5px;
-                    transform-origin: center;
-                    transition: stroke-width 1s ease, fill 1s ease, transform 1s ease;
-                }
-
-                & .hover-stroke {
-                    stroke: var(--icon-red);
-                    stroke-dasharray: 250;
-                    stroke-dashoffset: 250;
-                    stroke-width: 3px;
-                }
-            }
-        }
-
-        &:hover {
-            background-color: rgba(var(--surface-color-RGB), 1);
-            transition: background-color 0s ease;
-
-            & .nav-icon {
-                & svg {
-
-                    & .nav-icon-basic {
-
-                        transition: stroke-width 0s ease, fill 0s ease, transform .1s ease;
-
-                        &.hover-red {
-                            stroke-width: 2px;
-                            fill: var(--icon-red);
-                        }
-
-                        &.hover-green {
-                            stroke-width: 2px;
-                            fill: var(--icon-green);
-                        }
-
-                        &.hover-grey {
-                            stroke-width: 2px;
-                            fill: var(--icon-grey);
-                        }
-
-                        &.hover-yellow {
-                            stroke-width: 2px;
-                            fill: var(--icon-yellow);
-                        }
-
-                        &.hover-stroke {
-                            stroke-dashoffset: 0;
-                            transition: stroke-dashoffset 0.5s ease;
-                        }
-
-                        &.hover-up {
-                            transform: translateY(-0.3em);
-                        }
-
-                        &.hover-down {
-                            transform: translateY(0.5em);
-                        }
-
-                        &.hover-left {
-                            transform: translateX(-0.2em);
-                        }
-
-                        &.hover-scale-left {
-                            transform: translateX(-0.2em) scale(1.2);
-                        }
-
-                        &.hover-scale-plus {
-                            transform: translateY(-0.25em) scale(1.4);
-                        }
-
-                        &.hover-scale-right {
-                            transform: translateX(0.47em) translateY(0.18em) scale(1.4);
-                        }
-
-                        &.hover-rotate {
-                            transform: scale(1.05) rotate(-4deg);
-                        }
-
-                    }
-                }
-            }
-        }
-    }
-}
 
 aside {
     color: rgba(var(--text-color-RGB), 1);
@@ -370,56 +257,6 @@ aside {
         position: static;
         width: 80%;
         margin: 2em 0 0.5em;
-    }
-}
-
-table {
-    border-spacing: 0;
-
-    @media (max-width: 768px) {
-        font-size: 0.7em;
-    }
-
-    tr {
-
-        & th {
-            position: sticky;
-            top: 0px;
-            text-align: left;
-            border-bottom: 2px solid rgba(var(--text-color-RGB), 1);
-            padding-bottom: 0.3em;
-            background-color: rgba(var(--surface-color-RGB), 1);
-
-            @media (max-width: 768px) {
-                padding-top: 0.8em;
-            }
-        }
-
-        & td {
-            padding: 0.8em 0.5em 1em 0;
-            border-bottom: 1px solid rgba(var(--text-color-RGB), 0.5);
-            vertical-align: top;
-
-            &:first-child {
-                text-align: center;
-
-                & span {
-                    font-size: 7em;
-                    line-height: 0.8;
-                    font-weight: 700;
-
-                    @media (max-width: 768px) {
-                        font-size: 2em;
-                    }
-                }
-            }
-        }
-
-        &:last-child {
-            & td {
-                border-bottom: none;
-            }
-        }
     }
 }
 
@@ -640,13 +477,13 @@ table {
 .profile-links {
     display: flex;
     align-items: center;
-    gap: 1.5em;
+    gap: .8em;
 }
 
 .profile-links a {
-    color: rgba(var(--text-color-RGB), 1);
+    color: rgba(var(--link-color-RGB), 1);
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: 600;
 }
 
