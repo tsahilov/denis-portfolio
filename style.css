@@ -157,10 +157,11 @@ h1 {
 
 h2 {
     font-size: 1em;
-    margin-bottom: 0.8em;
+    margin: 0 0 .4em;
 
     @media (max-width: 768px) {
         line-height: 1.2;
+        margin: 0 0 .6em;
     }
 }
 
