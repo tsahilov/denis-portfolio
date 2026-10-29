@@ -659,3 +659,20 @@ table {
         white-space: nowrap;
     }
 }
+
+@media (max-width: 767px) {
+    .experience-list {
+        width: calc(100% + .6em);
+        overflow-x: auto;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        overscroll-behavior-x: contain;
+    }
+
+    .experience-list::-webkit-scrollbar {
+        display: none;
+    }
+}
