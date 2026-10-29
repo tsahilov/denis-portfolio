@@ -440,6 +440,19 @@ aside {
     grid-template-columns: minmax(0, 574fr) minmax(0, 775fr);
 }
 
+
+@media (max-width: 767px) {
+
+    .work-gallery--1,
+    .work-gallery--2,
+    .work-gallery--3,
+    .work-gallery--split,
+    .work-gallery--split-big,
+    .work-gallery--split-reverse {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
 .work-gallery img {
     display: block;
     width: 100%;
