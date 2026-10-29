@@ -32,8 +32,8 @@ html {
     --mobile-desktop-breakpoint: 768;
     --desktop-viewport-max: 1500;
 
-    --mobile-font-size-min: 17;
-    --mobile-font-size-max: 21;
+    --mobile-font-size-min: 18;
+    --mobile-font-size-max: 28;
 
     --desktop-font-size-min: 12.5;
     --desktop-font-size-max: 21;
@@ -674,5 +674,15 @@ table {
 
     .experience-list::-webkit-scrollbar {
         display: none;
+    }
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .mobile-only {
+        display: block;
     }
 }
