@@ -473,6 +473,77 @@ aside {
 
 
 
+
+/* Общие стили обложек */
+
+.work-cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+/* Обложка GenAI */
+
+.work-cover--genai {
+    aspect-ratio: 2.94 / 1;
+    background: #000;
+}
+
+.work-cover--genai img {
+    width: 32%;
+    height: auto;
+    border-radius: 0;
+}
+
+/* Обложка BugHunters */
+
+.work-cover--bughunters {
+    aspect-ratio: 2 / 1;
+    background: #ECECFF;
+}
+
+.work-cover--bughunters video {
+    display: block;
+    width: 65%;
+    height: auto;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 1em;
+}
+
+/* Мобильная версия */
+
+@media (max-width: 767px) {
+    .work-cover--genai {
+        aspect-ratio: 1.8 / 1;
+    }
+
+    .work-cover--genai img {
+        width: 55%;
+    }
+
+    .work-cover--bughunters {
+        background: transparent;
+        aspect-ratio: auto;
+        border-radius: 0;
+    }
+
+    .work-cover--bughunters video {
+        width: 100%;
+        max-height: none;
+        height: auto;
+        border-radius: .4em;
+    }
+}
+
+
+
+
+
+
 /* Шапка */
 
 .profile-header {
