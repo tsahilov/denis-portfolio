@@ -79,6 +79,7 @@ body {
 
 .text-width {
     width: 80%;
+    max-width: 48rem;
 
     @media (max-width: 768px) {
         width: 95%;
@@ -639,43 +640,6 @@ aside {
     gap: var(--gallery-gap);
 }
 
-/* Мобильная версия */
-
-@media (max-width: 767px) {
-    .work-gallery--domclick-social {
-        grid-template-columns: none;
-        grid-auto-flow: column;
-        grid-auto-columns: calc((100% - var(--gallery-gap)) / 1.15);
-
-        /* Растягиваем область до краёв экрана */
-        width: calc(100% + 1.2em);
-        margin-left: -0.6em;
-
-        /* Сохраняем отступы крайних слайдов */
-        padding-left: 0.6em;
-        padding-right: 0.6em;
-
-        /* Горизонтальная прокрутка */
-        overflow-x: auto;
-        overflow-y: hidden;
-
-        scroll-snap-type: x mandatory;
-        scroll-padding-left: 0.6em;
-        scroll-padding-right: 0.6em;
-
-        scrollbar-width: none;
-        -webkit-overflow-scrolling: touch;
-        overscroll-behavior-x: contain;
-    }
-
-    .work-gallery--domclick-social::-webkit-scrollbar {
-        display: none;
-    }
-
-    .work-gallery--domclick-social>img {
-        scroll-snap-align: start;
-    }
-}
 
 
 
@@ -874,5 +838,60 @@ aside {
 @media (max-width: 767px) {
     .mobile-only {
         display: block;
+    }
+}
+
+
+
+/* Универсальная мобильная карусель */
+
+@media (max-width: 767px) {
+    .work-gallery--mobile-scroll {
+        --gallery-gap: 0.5em;
+
+        grid-template-columns: none;
+        grid-auto-flow: column;
+        grid-auto-columns: calc((100% - var(--gallery-gap)) / 1.15);
+        gap: var(--gallery-gap);
+
+        width: calc(100% + 1.2em);
+        margin-left: -0.6em;
+        padding-left: 0.6em;
+        padding-right: 0.6em;
+
+        min-width: 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        scroll-snap-type: x mandatory;
+        scroll-padding-left: 0.6em;
+        scroll-padding-right: 0.6em;
+
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior-x: contain;
+    }
+
+    .work-gallery--mobile-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .work-gallery--mobile-scroll>img {
+        scroll-snap-align: start;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .work-gallery--kv-trio.work-gallery--mobile-scroll {
+        grid-template-columns: none;
+        grid-auto-flow: column;
+        grid-auto-columns: max-content;
+    }
+
+    .work-gallery--kv-trio.work-gallery--mobile-scroll>img {
+        width: auto;
+        height: min(145vw, 75svh);
+        max-width: none;
     }
 }
