@@ -76,6 +76,38 @@ if(!extra[mode].manual)extra[mode].debug=await v.evaluate(v=>({loaded:v.dataset.
 }
 await context.close();
 }
+for(const mode of ['pendingPlay','deniedPlay']){
+const context=await browser.newContext({viewport:{width:390,height:844}});
+const page=await context.newPage();
+await page.addInitScript(mode=>{
+    window.nativePlay=HTMLMediaElement.prototype.play;
+    window.controlAdditions=0;
+    new MutationObserver(records=>records.forEach(r=>{
+        if(r.attributeName==='controls' && r.oldValue===null) window.controlAdditions++;
+    })).observe(document,{subtree:true,attributes:true,attributeOldValue:true,attributeFilter:['controls']});
+    HTMLMediaElement.prototype.play=function(){
+        if(mode==='deniedPlay')return Promise.reject(new DOMException('Autoplay denied','NotAllowedError'));
+        return new Promise((resolve,reject)=>{window.rejectPendingPlay=reject;});
+    };
+},mode);
+await page.goto('http://127.0.0.1:8765/');
+const v=page.locator('video').first();await v.scrollIntoViewIfNeeded();await page.waitForTimeout(350);
+extra[mode]=await v.evaluate(v=>({controls:v.controls,poster:!!v.poster,additions:window.controlAdditions}));
+const assert=require('assert/strict');
+assert(extra[mode].poster);
+if(mode==='pendingPlay'){
+    assert(!extra[mode].controls);assert.equal(extra[mode].additions,0);
+    await page.evaluate(()=>scrollTo(0,0));await page.waitForTimeout(150);
+    await page.evaluate(()=>window.rejectPendingPlay(new DOMException('Interrupted','AbortError')));
+    await page.waitForTimeout(100);assert.equal(await page.evaluate(()=>window.controlAdditions),0);
+}else{
+    assert(extra[mode].controls);
+    await page.evaluate(()=>HTMLMediaElement.prototype.play=window.nativePlay);
+    const box=await v.boundingBox();await v.click({position:{x:22,y:box.height-50}});await page.waitForTimeout(1800);
+    extra[mode].manual=await v.evaluate(v=>!v.paused);assert(extra[mode].manual);
+}
+await context.close();
+}
 const context=await browser.newContext();const page=await context.newPage();
 extra.widths=[];for(const width of [320,767,768,1024]){await page.setViewportSize({width,height:844});await page.goto('http://127.0.0.1:8765/');extra.widths.push({width,overflow:await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)});}
 await context.close();results.push({extra});console.log('extra checks',JSON.stringify(extra));

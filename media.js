@@ -4,9 +4,13 @@
     const motion = matchMedia('(prefers-reduced-motion: reduce)');
     const connection = navigator.connection;
     const visible = new Set();
+    const attempts = new WeakMap();
+    const blocked = new WeakSet();
     const automatic = () => !motion.matches && !connection?.saveData;
 
     function hydrate(video) {
+        // Set the poster before assigning src, including on a fast scroll past the nearby observer.
+        if (!video.poster) video.poster = video.dataset.poster;
         if (video.dataset.loaded) return;
         video.dataset.loaded = 'true';
         // Assigning the media URL lets native controls initialize while respecting preload=none.
@@ -14,21 +18,33 @@
     }
 
     function update(video) {
+        video.controls = !automatic() || blocked.has(video);
         if (document.hidden || !visible.has(video)) {
+            attempts.delete(video);
             video.pause();
             return;
         }
-        if (!automatic()) {
-            video.controls = true;
-            return;
-        }
+        if (!automatic() || blocked.has(video) || attempts.has(video)) return;
+        // Never enable native controls while the automatic play request is pending.
+        video.controls = false;
         hydrate(video);
         video.muted = true;
+        const attempt = {};
+        attempts.set(video, attempt);
         video.play().then(() => {
+            if (attempts.get(video) !== attempt) return;
+            attempts.delete(video);
             // Preferences and visibility can change while play() is pending.
             if (document.hidden || !visible.has(video) || !automatic()) video.pause();
             else video.controls = false;
-        }).catch(() => { video.controls = true; });
+        }).catch(error => {
+            if (attempts.get(video) !== attempt) return;
+            attempts.delete(video);
+            // pause() during scrolling can cancel play(); that is not an autoplay denial.
+            if (error.name === 'AbortError' || document.hidden || !visible.has(video)) return;
+            blocked.add(video);
+            video.controls = true;
+        });
     }
 
     if (!('IntersectionObserver' in window)) {
