@@ -1,3 +1,4 @@
+/* Основа IDS: цвета, масштаб текста и размеры страницы */
 * {
     box-sizing: border-box;
 }
@@ -7,161 +8,116 @@
     --link-color-RGB: 0, 100, 255;
     --hover-color-RGB: 0, 215, 100;
     --background-color-RGB: 255, 255, 255;
-    --surface-color-RGB: 240, 240, 240;
-
-    --icon-red: rgba(253, 47, 75, 1);
-    --icon-yellow: rgba(255, 225, 0, 1);
-    --icon-grey: rgba(179, 180, 181, 1);
-    --icon-green: rgba(0, 200, 0, 1);
-}
-
-.dark {
-    --text-color-RGB: 225, 225, 225;
-    --link-color-RGB: 0, 150, 255;
-    --hover-color-RGB: 0, 215, 100;
-    --background-color-RGB: 30, 30, 30;
-    --surface-color-RGB: 55, 55, 55;
 }
 
 html {
-    line-height: 1.32;
-    /* scroll-behavior: smooth; */
-
-    @media (max-width: 768px) {
-        line-height: 1.28;
-    }
-
     --mobile-viewport-min: 320;
     --mobile-desktop-breakpoint: 768;
     --desktop-viewport-max: 1500;
-
     --mobile-font-size-min: 18;
     --mobile-font-size-max: 28;
-
     --desktop-font-size-min: 12.5;
     --desktop-font-size-max: 21;
-
+    line-height: 1.32;
     font-size: calc(var(--mobile-font-size-min) * 1px);
+}
 
-    @media screen and (min-width: 320px) {
+@media (max-width: 768px) {
+    html {
+        line-height: 1.28;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    html {
         font-size: calc(var(--mobile-font-size-min) * 1px + (var(--mobile-font-size-max) - var(--mobile-font-size-min)) * ((100vw - var(--mobile-viewport-min) * 1px) / (var(--mobile-desktop-breakpoint) - var(--mobile-viewport-min))));
     }
+}
 
-    @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    html {
         font-size: calc(var(--desktop-font-size-min) * 1px + (var(--desktop-font-size-max) - var(--desktop-font-size-min)) * ((100vw - var(--mobile-desktop-breakpoint) * 1px) / (var(--desktop-viewport-max) - var(--mobile-desktop-breakpoint))));
     }
+}
 
-    @media screen and (min-width: 1500px) {
+@media screen and (min-width: 1500px) {
+    html {
         font-size: calc(var(--desktop-font-size-max) * 1px);
     }
-
 }
 
 body {
-    font-family: "Inter", "Inter Fallback", Arial, sans-serif;
     margin: 0;
+    font-family: "Inter", "Inter Fallback", Arial, sans-serif;
+    font-weight: 500;
     color: rgba(var(--text-color-RGB), 1);
     background-color: rgba(var(--background-color-RGB), 1);
-    font-weight: 500;
 }
 
 .wrapper {
     position: relative;
-    margin: 0 auto;
     width: 96%;
+    margin: 0 auto;
+}
 
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
+    .wrapper {
         width: 100%;
-        padding: .6em;
+        padding: 0.6em;
     }
 }
 
+/* Текст и ссылки. Граница 768px сохранена отдельно от галерей (767px). */
 .text-width {
     width: 80%;
     max-width: 48rem;
+}
 
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
+    .text-width {
         width: 95%;
     }
 }
 
-.v-space.S {
-    height: .5em;
-
-    @media (max-width: 768px) {
-        height: 0.5em;
-    }
-}
-
-.v-space.M {
-    height: 2em;
-
-    @media (max-width: 768px) {
-        height: 1em;
-    }
-}
-
-.v-space.L {
-    height: 4em;
-
-    @media (max-width: 768px) {
-        height: 2em;
-    }
-}
-
-.v-space.XL {
-    height: 8em;
-
-    @media (max-width: 768px) {
-        height: 4em;
-    }
-}
-
-figure {
-    margin: 0;
-    margin-bottom: 1em;
-}
-
-figure figcaption {
-    font-size: 0.8em;
-    opacity: 0.6;
-}
-
-img {
-    display: block;
-    width: 100%;
-}
-
 h1 {
     font-size: 1em;
-    /* letter-spacing: -0.03em; */
     line-height: 1.32;
     font-weight: 800;
+    margin: 0 0 0.4em;
+}
 
-    margin: 0 0 .4em;
-
-    @media (max-width: 768px) {
-        font-size: 1em;
+@media (max-width: 768px) {
+    h1 {
         width: 80%;
         line-height: 1.28;
-        margin: 0 0 .6em;
-    }
-
-    & span {
-        text-decoration: underline;
-        text-decoration-color: rgba(255, 235, 0, 1);
-
+        margin-bottom: 0.6em;
     }
 }
 
 h2 {
     font-size: 1em;
-    margin: 0 0 .4em;
+    margin: 0 0 0.4em;
+}
 
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
+    h2 {
         line-height: 1.2;
-        margin: 0 0 .6em;
+        margin-bottom: 0.6em;
     }
+}
+
+p {
+    margin: 0 0 0.8em;
+}
+
+@media (max-width: 768px) {
+    p {
+        margin-bottom: 1.2em;
+    }
+}
+
+p:last-of-type {
+    margin: 0;
 }
 
 a {
@@ -170,520 +126,33 @@ a {
     text-decoration-thickness: 1px;
     text-underline-offset: 0.15em;
     text-decoration-color: rgba(var(--link-color-RGB), 0.3);
-
     transition: color 0.5s ease, text-decoration-color 0.5s ease;
 }
 
 a:hover {
     color: rgba(var(--hover-color-RGB), 1);
     text-decoration-color: rgba(var(--hover-color-RGB), 0.3);
-
     transition: color 0s ease, text-decoration-color 0s ease;
 }
 
-p {
-    margin: 0 0 0.8em;
-
-    @media (max-width: 768px) {
-        margin: 0 0 1.2em;
-    }
-
-    &:last-of-type {
-        margin: 0;
-    }
-}
-
-aside {
-    color: rgba(var(--text-color-RGB), 1);
-    background-color: rgba(var(--surface-color-RGB), 1);
-    padding: 0.7em 1.8em 1.5em 0.8em;
-    border-radius: 0.5em;
-
-    @media (max-width: 768px) {
-        padding: 0.7em 0.8em 1.5em 0.8em;
-    }
-}
-
-.images-sequence {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 1em;
-
-    --gap: 0.5em;
-    --columns: 2;
-    --gap-number: calc(var(--columns) - 1);
-
-    gap: var(--gap);
-
-    @media (max-width: 768px) {
-
-        --columns: 2;
-    }
-
-    & figure {
-
-        width: calc((100% - var(--gap-number) * var(--gap)) / (var(--columns)));
-
-        & img {
-            object-fit: cover;
-        }
-
-    }
-}
-
-.columns {
-    display: flex;
-    flex-wrap: wrap;
-
-    p {
-        width: 50%;
-        padding-right: 1.5em;
-
-        @media (max-width: 768px) {
-            width: 100%;
-            padding-right: 0em;
-        }
-    }
-}
-
-.note {
-    position: absolute;
-    left: 81%;
-    width: 19%;
-    font-size: 0.8em;
-
-    @media (max-width: 768px) {
-        position: static;
-        width: 80%;
-        margin: 2em 0 0.5em;
-    }
-}
-
-.promo-link {
-    display: inline-block;
-    font-size: 1.6em;
-    text-transform: uppercase;
-    letter-spacing: 0.01em;
-    font-weight: 700;
-    transform: skew(-5deg);
-    transition: letter-spacing 1s ease, transform 1s ease;
-
-    @media (max-width: 768px) {
-        font-size: 1.1em;
-    }
-
-    &.sleeping {
-        letter-spacing: 0.1em;
-        transform: skew(-12deg);
-        transition: letter-spacing 0s ease, transform 0s ease;
-    }
-
-    &:hover {
-        letter-spacing: 0.03em;
-        transform: skew(-6deg);
-        transition: letter-spacing 0.3s ease, transform 0.3s ease;
-    }
-}
-
-/* Кейсы */
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: .3em;
-}
-
-.project {
-    display: block;
-    min-width: 0;
-    overflow: hidden;
-    border-radius: 1.2em;
-}
-
-.project img {
+img {
     display: block;
     width: 100%;
-    height: auto;
 }
 
-/* Мобильная версия */
+/* Вертикальный ритм */
+.v-space.S { height: 0.5em; }
+.v-space.M { height: 2em; }
+.v-space.L { height: 4em; }
+.v-space.XL { height: 8em; }
 
 @media (max-width: 768px) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .project {
-        border-radius: 1em;
-    }
+    .v-space.M { height: 1em; }
+    .v-space.L { height: 2em; }
+    .v-space.XL { height: 4em; }
 }
 
-.project--square {
-    border: 2px solid rgba(0, 0, 0, 1);
-}
-
-/* Шкала опыта */
-
-.experience-list {
-    --experience-gap: 2em;
-
-    display: flex;
-    flex-wrap: nowrap;
-    gap: var(--experience-gap);
-}
-
-.experience-item {
-    position: relative;
-    flex: 0 0 auto;
-    white-space: nowrap;
-}
-
-/* Горизонтальная линия */
-
-.experience-item::before {
-    content: "";
-    position: absolute;
-    top: 1.04em;
-    left: 0;
-    right: calc(-1 * var(--experience-gap));
-    height: 1px;
-    background: #dedede;
-}
-
-.experience-item:last-child::before {
-    right: 0;
-}
-
-/* Даты */
-
-.experience-date {
-    position: relative;
-    width: max-content;
-    padding-right: 0.4em;
-    margin-bottom: 0.4em;
-    background: white;
-
-    font-size: 0.7em;
-    font-weight: 600;
-    line-height: 1.3;
-}
-
-/* Компании */
-
-.experience-company {
-    font-size: 1em;
-    font-weight: 500;
-    line-height: 1.32;
-}
-
-/* Постепенное ослабление цвета */
-
-.experience-item:nth-child(2) {
-    opacity: 0.85;
-}
-
-.experience-item:nth-child(3) {
-    opacity: 0.65;
-}
-
-.experience-item:nth-child(4) {
-    opacity: 0.45;
-}
-
-.experience-item:nth-child(5) {
-    opacity: 0.3;
-}
-
-/* Мобильная версия */
-
-@media (max-width: 767px) {
-    .experience-list {
-        /* Растягиваем область до краёв экрана */
-        width: calc(100% + 1.2em);
-        margin-left: -0.6em;
-
-        /* Выравниваем крайние элементы по паддингам */
-        padding-left: 0.6em;
-        padding-right: 0.6em;
-
-        min-width: 0;
-        flex-wrap: nowrap;
-
-        /* Горизонтальная прокрутка */
-        overflow-x: auto;
-        overflow-y: hidden;
-
-        scrollbar-width: none;
-        -webkit-overflow-scrolling: touch;
-        overscroll-behavior-x: contain;
-    }
-
-    .experience-list::-webkit-scrollbar {
-        display: none;
-    }
-}
-
-/* ===================== */
-
-/* Галереи */
-
-.work-gallery {
-    display: grid;
-    gap: .5em;
-    align-items: start;
-}
-
-.work-gallery--1 {
-    grid-template-columns: 1fr;
-}
-
-.work-gallery--2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.work-gallery--3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.work-gallery--split {
-    grid-template-columns: minmax(0, 1112fr) minmax(0, 720fr);
-}
-
-.work-gallery--split-big {
-    grid-template-columns: minmax(0, 382fr) minmax(0, 979fr);
-}
-
-.work-gallery--split-reverse {
-    grid-template-columns: minmax(0, 574fr) minmax(0, 775fr);
-}
-
-@media (max-width: 767px) {
-
-    .work-gallery--1,
-    .work-gallery--2,
-    .work-gallery--3,
-    .work-gallery--split,
-    .work-gallery--split-big,
-    .work-gallery--split-reverse {
-        grid-template-columns: minmax(0, 1fr);
-    }
-}
-
-.work-gallery img,
-.work-gallery video {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 0.5em;
-}
-
-.work-gallery--kv-trio {
-    grid-template-columns: minmax(0, 491fr) minmax(0, 663fr) minmax(0, 664fr);
-}
-
-@media (max-width: 767px) {
-    .work-gallery--kv-trio {
-        grid-template-columns: 1fr;
-    }
-}
-
-.work-gallery--giga-ban {
-    grid-template-columns: minmax(0, 1132fr) minmax(0, 690fr);
-}
-
-@media (max-width: 767px) {
-    .work-gallery--giga-ban {
-        grid-template-columns: 1fr;
-    }
-}
-
-.work-gallery--giga-sochi {
-    grid-template-columns: minmax(0, 674fr) minmax(0, 674fr) minmax(0, 469fr);
-    align-items: stretch;
-}
-
-.work-gallery--giga-sochi>video {
-    width: 100%;
-    height: 100%;
-    min-height: 0;
-    object-fit: cover;
-    object-position: center;
-}
-
-@media (max-width: 767px) {
-    .work-gallery--giga-sochi {
-        grid-template-columns: 1fr;
-    }
-
-    .work-gallery--giga-sochi>video {
-        height: auto;
-        object-fit: contain;
-    }
-}
-
-.work-gallery--giga-sochi>video:last-child {
-    object-position: 90% center;
-}
-
-.work-gallery--giga-sochi-row-2 {
-    grid-template-columns: minmax(0, 458fr) minmax(0, 718fr) minmax(0, 645fr);
-    grid-template-rows: minmax(0, 1fr);
-    aspect-ratio: 2.8 / 1;
-    align-items: stretch;
-}
-
-.work-gallery--giga-sochi-row-2>video {
-    width: 100%;
-    height: 100%;
-    min-height: 0;
-    object-fit: cover;
-    object-position: center;
-}
-
-@media (max-width: 767px) {
-    .work-gallery--giga-sochi-row-2 {
-        grid-template-columns: 1fr;
-        grid-template-rows: none;
-        aspect-ratio: auto;
-    }
-
-    .work-gallery--giga-sochi-row-2>video {
-        height: auto;
-        object-fit: contain;
-    }
-}
-
-/* Галерея ДомКлик — 5 изображений */
-
-.work-gallery--domclick-social {
-    --gallery-gap: 0.5em;
-
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: var(--gallery-gap);
-}
-
-/* Основная сетка */
-
-.work-gallery--promo {
-    grid-template-columns: calc(66.6667% - 0.09009em) minmax(0, 1fr);
-    gap: 0.5em;
-    align-items: start;
-}
-
-/* Большое видео */
-
-.promo-main {
-    min-width: 0;
-    aspect-ratio: auto;
-    overflow: hidden;
-    border-radius: 0.5em;
-}
-
-.promo-main video {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-height: none;
-}
-
-/* Правая колонка */
-
-.promo-side {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    min-width: 0;
-}
-
-.promo-thumb {
-    position: static;
-    aspect-ratio: auto;
-    overflow: hidden;
-    border-radius: 0.5em;
-}
-
-.promo-thumb video {
-    position: static;
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-/* Мобильная версия */
-
-@media (max-width: 767px) {
-    .work-gallery--promo {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Общие стили обложек */
-
-.work-cover {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 1em;
-}
-
-/* Обложка GenAI */
-
-.work-cover--genai {
-    aspect-ratio: 2.94 / 1;
-    background: #000;
-}
-
-.work-cover--genai img {
-    width: 32%;
-    height: auto;
-    border-radius: 0;
-}
-
-/* Обложка BugHunters */
-
-.work-cover--bughunters {
-    aspect-ratio: 2 / 1;
-    background: #ECECFF;
-}
-
-.work-cover--bughunters video {
-    display: block;
-    width: 65%;
-    height: auto;
-    max-height: 90%;
-    object-fit: contain;
-    border-radius: 1em;
-}
-
-/* Мобильная версия */
-
-@media (max-width: 767px) {
-    .work-cover--genai {
-        aspect-ratio: 1.8 / 1;
-    }
-
-    .work-cover--genai img {
-        width: 55%;
-    }
-
-    .work-cover--bughunters {
-        background: transparent;
-        aspect-ratio: auto;
-        border-radius: 0;
-    }
-
-    .work-cover--bughunters video {
-        width: 100%;
-        max-height: none;
-        height: auto;
-        border-radius: .4em;
-    }
-}
-
-/* Шапка */
-
+/* Шапка: аватар и контакты */
 .profile-header {
     display: flex;
     justify-content: space-between;
@@ -700,20 +169,15 @@ aside {
 .profile-links {
     display: flex;
     align-items: center;
-    gap: .8em;
+    gap: 0.8em;
 }
 
 .profile-links a {
-    color: rgba(var(--link-color-RGB), 1);
     text-decoration: none;
-    font-size: 1em;
     font-weight: 600;
 }
 
-.profile-links a:hover {
-    color: rgba(var(--hover-color-RGB), 1);
-}
-
+/* Видимость и переносы текста */
 @media (min-width: 768px) {
     .desktop-nowrap {
         white-space: nowrap;
@@ -730,30 +194,113 @@ aside {
     }
 }
 
-/* Универсальная мобильная карусель */
+/* Шкала опыта */
+.experience-list {
+    --experience-gap: 2em;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: var(--experience-gap);
+}
 
 @media (max-width: 767px) {
-    .work-gallery--mobile-scroll {
-        --gallery-gap: 0.5em;
-
-        grid-template-columns: none;
-        grid-auto-flow: column;
-        grid-auto-columns: calc((100% - var(--gallery-gap)) / 1.15);
-        gap: var(--gallery-gap);
-
+    .experience-list {
         width: calc(100% + 1.2em);
         margin-left: -0.6em;
-        padding-left: 0.6em;
-        padding-right: 0.6em;
-
+        padding-inline: 0.6em;
         min-width: 0;
         overflow-x: auto;
         overflow-y: hidden;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior-x: contain;
+    }
 
+    .experience-list::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.experience-item {
+    position: relative;
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+
+.experience-item::before {
+    content: "";
+    position: absolute;
+    top: 1.04em;
+    left: 0;
+    right: calc(-1 * var(--experience-gap));
+    height: 1px;
+    background: #dedede;
+}
+
+.experience-item:last-child::before {
+    right: 0;
+}
+
+.experience-date {
+    position: relative;
+    width: max-content;
+    padding-right: 0.4em;
+    margin-bottom: 0.4em;
+    background: white;
+    font-size: 0.7em;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.experience-company {
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.32;
+}
+
+.experience-item:nth-child(2) { opacity: 0.85; }
+.experience-item:nth-child(3) { opacity: 0.65; }
+.experience-item:nth-child(4) { opacity: 0.45; }
+.experience-item:nth-child(5) { opacity: 0.3; }
+
+/* Галереи: общая сетка и медиа.
+   Модификаторы ниже задают только колонки; на мобильных — одна колонка.
+   У горизонтальной карусели собственная раскладка, следующая за основой. */
+.work-gallery {
+    --gallery-gap: 0.5em;
+    display: grid;
+    grid-template-columns: var(--gallery-columns, 1fr);
+    gap: var(--gallery-gap);
+    align-items: start;
+}
+
+.work-gallery img,
+.work-gallery video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+}
+
+@media (max-width: 767px) {
+    .work-gallery {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+/* Горизонтальные галереи. Общая сетка выше не должна перекрывать карусель. */
+@media (max-width: 767px) {
+    .work-gallery--mobile-scroll {
+        grid-template-columns: none;
+        grid-auto-flow: column;
+        grid-auto-columns: calc((100% - var(--gallery-gap)) / 1.15);
+        width: calc(100% + 1.2em);
+        margin-left: -0.6em;
+        padding-inline: 0.6em;
+        min-width: 0;
+        overflow-x: auto;
+        overflow-y: hidden;
         scroll-snap-type: x mandatory;
-        scroll-padding-left: 0.6em;
-        scroll-padding-right: 0.6em;
-
+        scroll-padding-inline: 0.6em;
         scrollbar-width: none;
         -webkit-overflow-scrolling: touch;
         overscroll-behavior-x: contain;
@@ -763,92 +310,212 @@ aside {
         display: none;
     }
 
-    .work-gallery--mobile-scroll>img {
+    .work-gallery--mobile-scroll > img {
         scroll-snap-align: start;
     }
 }
 
+/* Равные колонки и пропорции GenAI */
+.work-gallery--2 {
+    --gallery-columns: repeat(2, minmax(0, 1fr));
+}
+
+.work-gallery--3 {
+    --gallery-columns: repeat(3, minmax(0, 1fr));
+}
+
+.work-gallery--split {
+    --gallery-columns: minmax(0, 1112fr) minmax(0, 720fr);
+}
+
+/* Domclick KV: разные ширины карточек, одинаковая высота на мобильных */
+.work-gallery--kv-trio {
+    --gallery-columns: minmax(0, 491fr) minmax(0, 663fr) minmax(0, 664fr);
+}
+
 @media (max-width: 767px) {
     .work-gallery--kv-trio.work-gallery--mobile-scroll {
-        grid-template-columns: none;
-        grid-auto-flow: column;
         grid-auto-columns: max-content;
     }
 
-    .work-gallery--kv-trio.work-gallery--mobile-scroll>img {
+    .work-gallery--kv-trio.work-gallery--mobile-scroll > img {
         width: auto;
         height: min(145vw, 75svh);
         max-width: none;
     }
 }
 
-/* Галерея DDD */
+/* Баннеры ГигаЧата */
+.work-gallery--giga-ban {
+    --gallery-columns: minmax(0, 1132fr) minmax(0, 690fr);
+}
 
+/* Sochi: общая подгонка видео в обеих строках */
+.work-gallery--giga-sochi > video,
+.work-gallery--giga-sochi-row-2 > video {
+    height: 100%;
+    min-height: 0;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    .work-gallery--giga-sochi > video,
+    .work-gallery--giga-sochi-row-2 > video {
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+/* Sochi: первая строка */
+.work-gallery--giga-sochi {
+    --gallery-columns: minmax(0, 674fr) minmax(0, 674fr) minmax(0, 469fr);
+    align-items: stretch;
+}
+
+/* Sochi: вторая строка с общей высотой */
+.work-gallery--giga-sochi-row-2 {
+    --gallery-columns: minmax(0, 458fr) minmax(0, 718fr) minmax(0, 645fr);
+    grid-template-rows: minmax(0, 1fr);
+    aspect-ratio: 2.8 / 1;
+    align-items: stretch;
+}
+
+@media (max-width: 767px) {
+    .work-gallery--giga-sochi-row-2 {
+        grid-template-rows: none;
+        aspect-ratio: auto;
+    }
+}
+
+/* Социальные сети Domclick; на мобильных используется общая карусель */
+.work-gallery--domclick-social {
+    --gallery-columns: repeat(5, minmax(0, 1fr));
+}
+
+/* Промо ГигаЧата: большое видео и два справа */
+.work-gallery--promo {
+    --gallery-columns: calc(66.6667% - 0.09009em) minmax(0, 1fr);
+}
+
+.promo-main,
+.promo-thumb {
+    overflow: hidden;
+    border-radius: 0.5em;
+}
+
+.promo-main,
+.promo-side {
+    min-width: 0;
+}
+
+.promo-side {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gallery-gap);
+}
+
+/* Обложки */
+.work-cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+/* Обложка GenAI */
+.work-cover--genai {
+    aspect-ratio: 2.94 / 1;
+    background: #000;
+}
+
+.work-cover--genai img {
+    width: 32%;
+    border-radius: 0;
+}
+
+@media (max-width: 767px) {
+    .work-cover--genai {
+        aspect-ratio: 1.8 / 1;
+    }
+
+    .work-cover--genai img {
+        width: 55%;
+    }
+}
+
+/* Обложка BugHunters */
+.work-cover--bughunters {
+    aspect-ratio: 2 / 1;
+    background: #ECECFF;
+}
+
+.work-cover--bughunters video {
+    width: 65%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 1em;
+}
+
+@media (max-width: 767px) {
+    .work-cover--bughunters {
+        background: transparent;
+        aspect-ratio: auto;
+        border-radius: 0;
+    }
+
+    .work-cover--bughunters video {
+        width: 100%;
+        max-height: none;
+        border-radius: 0.4em;
+    }
+}
+
+/* DDD: четыре колонки, две вложенные сетки и мозаика */
 .work-gallery--ddd {
-    grid-template-columns:
-        minmax(0, 294fr) minmax(0, 294fr) minmax(0, 155fr) minmax(0, 235fr);
-
+    --gallery-columns: minmax(0, 294fr) minmax(0, 294fr) minmax(0, 155fr) minmax(0, 235fr);
     aspect-ratio: 3.36 / 1;
     align-items: stretch;
 }
 
-/* Изображения */
-
 .work-gallery--ddd img {
-    display: block;
-    width: 100%;
     height: 100%;
     min-width: 0;
     min-height: 0;
     object-fit: cover;
 }
 
-/* Третья колонка */
-
-.ddd-column {
-    display: grid;
-    grid-template-rows: minmax(0, 5fr) minmax(0, 1fr);
-    gap: 0.5em;
-    min-width: 0;
-    min-height: 0;
-}
-
-/* Четвёртая колонка */
-
-.ddd-right {
-    display: grid;
-    grid-template-rows: minmax(0, 157fr) minmax(0, 133fr);
-    gap: 0.5em;
-    min-width: 0;
-    min-height: 0;
-}
-
-/* Нижняя мозаика */
-
+.ddd-column,
+.ddd-right,
 .ddd-mini {
     display: grid;
-    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
-    grid-template-rows:
-        minmax(0, 2fr) minmax(0, 1fr) minmax(0, 2fr);
-
-    gap: 0.5em;
+    gap: var(--gallery-gap);
     min-width: 0;
     min-height: 0;
 }
 
-/* Последняя картинка занимает
-   всю высоту справа */
+.ddd-column {
+    grid-template-rows: minmax(0, 5fr) minmax(0, 1fr);
+}
 
+.ddd-right {
+    grid-template-rows: minmax(0, 157fr) minmax(0, 133fr);
+}
+
+.ddd-mini {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 2fr);
+}
+
+/* Последняя картинка занимает всю высоту справа. */
 .ddd-mini img:nth-child(4) {
     grid-column: 2;
     grid-row: 1 / 4;
 }
 
-/* Мобильная версия */
-
 @media (max-width: 767px) {
     .work-gallery--ddd {
-        grid-template-columns: minmax(0, 1fr);
         aspect-ratio: auto;
     }
 
@@ -870,22 +537,11 @@ aside {
     }
 }
 
-/* Галерея журналов */
-
+/* Журналы B2B: высоту задаёт левая картинка, справа фото и квадратное видео */
 .work-gallery--b2b-journal {
-    grid-template-columns: minmax(0, 382fr) minmax(0, 556fr);
+    --gallery-columns: minmax(0, 382fr) minmax(0, 556fr);
     align-items: stretch;
 }
-
-/* Левая картинка определяет высоту */
-
-.work-gallery--b2b-journal>img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-/* Правая колонка */
 
 .b2b-journal-side {
     position: relative;
@@ -893,25 +549,18 @@ aside {
     min-height: 0;
 }
 
-/* Верхняя картинка */
-
-.b2b-journal-side>img {
+.b2b-journal-side > img {
     position: absolute;
     top: 0;
     left: 0;
-
-    width: 100%;
     height: calc(58% - 0.25em);
     object-fit: cover;
 }
 
-/* Нижнее квадратное видео */
-
-.b2b-journal-side>video {
+.b2b-journal-side > video {
     position: absolute;
     left: 0;
     bottom: 0;
-
     width: auto;
     height: calc(42% - 0.25em);
     aspect-ratio: 1 / 1;
@@ -919,28 +568,17 @@ aside {
     object-fit: cover;
 }
 
-/* Мобильная версия */
-
 @media (max-width: 767px) {
-    .work-gallery--b2b-journal {
-        grid-template-columns: 1fr;
-    }
-
     .b2b-journal-side {
         display: flex;
         flex-direction: column;
-        gap: 0.5em;
+        gap: var(--gallery-gap);
     }
 
-    .b2b-journal-side>img,
-    .b2b-journal-side>video {
+    .b2b-journal-side > img,
+    .b2b-journal-side > video {
         position: static;
         width: 100%;
         height: auto;
-    }
-
-    .b2b-journal-side>video {
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
     }
 }
