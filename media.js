@@ -9,10 +9,8 @@
     function hydrate(video) {
         if (video.dataset.loaded) return;
         video.dataset.loaded = 'true';
-        video.querySelectorAll('source[data-src]').forEach(source => {
-            source.src = source.dataset.src;
-        });
-        video.load();
+        // Assigning the media URL lets native controls initialize while respecting preload=none.
+        video.src = video.querySelector('source').dataset.src;
     }
 
     function update(video) {
@@ -32,12 +30,6 @@
             else video.controls = false;
         }).catch(() => { video.controls = true; });
     }
-
-    videos.forEach(video => {
-        // Native controls remain available if autoplay is blocked or motion is reduced.
-        video.addEventListener('pointerdown', () => hydrate(video), { once: true });
-        video.addEventListener('keydown', () => hydrate(video), { once: true });
-    });
 
     if (!('IntersectionObserver' in window)) {
         videos.forEach(video => {
