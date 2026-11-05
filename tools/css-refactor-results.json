@@ -1,0 +1,651 @@
+{
+  "baseRef": "a24caa5",
+  "size": {
+    "before": {
+      "lines": 946,
+      "bytes": 17798,
+      "gzip": 3883,
+      "brotli": 3223
+    },
+    "after": {
+      "lines": 584,
+      "bytes": 12841,
+      "gzip": 3336,
+      "brotli": 2753
+    }
+  },
+  "visual": [
+    {
+      "width": 390,
+      "frames": 27,
+      "computedDifferences": 0,
+      "minimumSSIM": 0.9995999278627515,
+      "exactFrames": 26
+    },
+    {
+      "width": 768,
+      "frames": 15,
+      "computedDifferences": 0,
+      "minimumSSIM": 0.9963632198648702,
+      "exactFrames": 10
+    },
+    {
+      "width": 1440,
+      "frames": 24,
+      "computedDifferences": 0,
+      "minimumSSIM": 1,
+      "exactFrames": 24
+    },
+    {
+      "width": 1920,
+      "frames": 29,
+      "computedDifferences": 0,
+      "minimumSSIM": 1,
+      "exactFrames": 29
+    }
+  ],
+  "performance": [
+    {
+      "variant": "base",
+      "width": 390,
+      "lcp": 776,
+      "cls": 0.00018106659544159546,
+      "recalcMs": 29.576999999999998,
+      "layoutMs": 157.078,
+      "scriptMs": 13.153
+    },
+    {
+      "variant": "current",
+      "width": 390,
+      "lcp": 760,
+      "cls": 0.00018106659544159546,
+      "recalcMs": 15.144,
+      "layoutMs": 134.607,
+      "scriptMs": 7.507
+    },
+    {
+      "variant": "current",
+      "width": 390,
+      "lcp": 760,
+      "cls": 0.00018106659544159546,
+      "recalcMs": 15.845999999999998,
+      "layoutMs": 142.791,
+      "scriptMs": 4.872999999999999
+    },
+    {
+      "variant": "base",
+      "width": 390,
+      "lcp": 772,
+      "cls": 0.00018106659544159546,
+      "recalcMs": 17.235,
+      "layoutMs": 147.232,
+      "scriptMs": 6.2059999999999995
+    },
+    {
+      "variant": "base",
+      "width": 390,
+      "lcp": 772,
+      "cls": 0.00018106659544159546,
+      "recalcMs": 14.721,
+      "layoutMs": 156.56300000000002,
+      "scriptMs": 6.019
+    },
+    {
+      "variant": "current",
+      "width": 390,
+      "lcp": 768,
+      "cls": 0.00018106659544159546,
+      "recalcMs": 13.187000000000001,
+      "layoutMs": 145.985,
+      "scriptMs": 4.603000000000001
+    },
+    {
+      "variant": "base",
+      "width": 768,
+      "lcp": 760,
+      "cls": 0.00010139634874131945,
+      "recalcMs": 15.393,
+      "layoutMs": 139.149,
+      "scriptMs": 6.135
+    },
+    {
+      "variant": "current",
+      "width": 768,
+      "lcp": 764,
+      "cls": 0.00010139634874131945,
+      "recalcMs": 13.237,
+      "layoutMs": 150.71200000000002,
+      "scriptMs": 5.702
+    },
+    {
+      "variant": "current",
+      "width": 768,
+      "lcp": 736,
+      "cls": 0.00010139634874131945,
+      "recalcMs": 15.647999999999998,
+      "layoutMs": 155.84799999999998,
+      "scriptMs": 7.614
+    },
+    {
+      "variant": "base",
+      "width": 768,
+      "lcp": 772,
+      "cls": 0.00010139634874131945,
+      "recalcMs": 13.205,
+      "layoutMs": 147.655,
+      "scriptMs": 5.328
+    },
+    {
+      "variant": "base",
+      "width": 768,
+      "lcp": 780,
+      "cls": 0.00010139634874131945,
+      "recalcMs": 14.491,
+      "layoutMs": 150.79600000000002,
+      "scriptMs": 5.622
+    },
+    {
+      "variant": "current",
+      "width": 768,
+      "lcp": 788,
+      "cls": 0.00010139634874131945,
+      "recalcMs": 11.831,
+      "layoutMs": 153.027,
+      "scriptMs": 5.466
+    },
+    {
+      "variant": "base",
+      "width": 1440,
+      "lcp": 756,
+      "cls": 0.00005474923006955161,
+      "recalcMs": 14.013,
+      "layoutMs": 156.328,
+      "scriptMs": 6.035
+    },
+    {
+      "variant": "current",
+      "width": 1440,
+      "lcp": 768,
+      "cls": 0.00005474923006955161,
+      "recalcMs": 13.93,
+      "layoutMs": 155.454,
+      "scriptMs": 5.622
+    },
+    {
+      "variant": "current",
+      "width": 1440,
+      "lcp": 796,
+      "cls": 0.00005474923006955161,
+      "recalcMs": 12.318000000000001,
+      "layoutMs": 173.235,
+      "scriptMs": 6.7330000000000005
+    },
+    {
+      "variant": "base",
+      "width": 1440,
+      "lcp": 768,
+      "cls": 0.00005474923006955161,
+      "recalcMs": 16.512,
+      "layoutMs": 152.155,
+      "scriptMs": 7.577999999999999
+    },
+    {
+      "variant": "base",
+      "width": 1440,
+      "lcp": 776,
+      "cls": 0.00005474923006955161,
+      "recalcMs": 12.867999999999999,
+      "layoutMs": 154.559,
+      "scriptMs": 5.659
+    },
+    {
+      "variant": "current",
+      "width": 1440,
+      "lcp": 760,
+      "cls": 0.00005474923006955161,
+      "recalcMs": 13.854999999999999,
+      "layoutMs": 158.915,
+      "scriptMs": 6.123
+    },
+    {
+      "variant": "base",
+      "width": 1920,
+      "lcp": 740,
+      "cls": 0.00003156636555989583,
+      "recalcMs": 14.613,
+      "layoutMs": 151.76799999999997,
+      "scriptMs": 5.051
+    },
+    {
+      "variant": "current",
+      "width": 1920,
+      "lcp": 728,
+      "cls": 0.00003156636555989583,
+      "recalcMs": 12.85,
+      "layoutMs": 155.38,
+      "scriptMs": 5.568
+    },
+    {
+      "variant": "current",
+      "width": 1920,
+      "lcp": 764,
+      "cls": 0.00003156636555989583,
+      "recalcMs": 16.412,
+      "layoutMs": 158.379,
+      "scriptMs": 6.346
+    },
+    {
+      "variant": "base",
+      "width": 1920,
+      "lcp": 760,
+      "cls": 0.00003156636555989583,
+      "recalcMs": 14.267,
+      "layoutMs": 150.32999999999998,
+      "scriptMs": 5.936
+    },
+    {
+      "variant": "base",
+      "width": 1920,
+      "lcp": 776,
+      "cls": 0.00003156636555989583,
+      "recalcMs": 14.081,
+      "layoutMs": 167.23499999999999,
+      "scriptMs": 5.582
+    },
+    {
+      "variant": "current",
+      "width": 1920,
+      "lcp": 764,
+      "cls": 0.00003156636555989583,
+      "recalcMs": 16.84,
+      "layoutMs": 153.82000000000002,
+      "scriptMs": 6.601
+    }
+  ],
+  "media": [
+    {
+      "width": 390,
+      "clips": [
+        {
+          "file": "video/giga_bugs.mp4",
+          "width": 1920,
+          "height": 1080,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-10.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-20.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-30.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-trio-1.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-trio-2.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-trio-3.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/candinsky-20.mp4",
+          "width": 4636,
+          "height": 4636,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-05.mp4",
+          "width": 4400,
+          "height": 1000,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-20.mp4",
+          "width": 960,
+          "height": 1280,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-30.mp4",
+          "width": 1080,
+          "height": 920,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-40.mp4",
+          "width": 960,
+          "height": 1184,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-50.mp4",
+          "width": 1740,
+          "height": 1334,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-60.mp4",
+          "width": 1280,
+          "height": 960,
+          "controls": false
+        },
+        {
+          "file": "video/b2b-30.mp4",
+          "width": 1280,
+          "height": 1280,
+          "controls": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 768,
+      "clips": [
+        {
+          "file": "video/giga_bugs.mp4",
+          "width": 1920,
+          "height": 1080,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-10.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-20.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-30.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-trio-1.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-trio-2.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-trio-3.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/candinsky-20.mp4",
+          "width": 4636,
+          "height": 4636,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-05.mp4",
+          "width": 4400,
+          "height": 1000,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-20.mp4",
+          "width": 960,
+          "height": 1280,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-30.mp4",
+          "width": 1080,
+          "height": 920,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-40.mp4",
+          "width": 960,
+          "height": 1184,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-50.mp4",
+          "width": 1740,
+          "height": 1334,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-60.mp4",
+          "width": 1280,
+          "height": 960,
+          "controls": false
+        },
+        {
+          "file": "video/b2b-30.mp4",
+          "width": 1280,
+          "height": 1280,
+          "controls": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "clips": [
+        {
+          "file": "video/giga_bugs.mp4",
+          "width": 1920,
+          "height": 1080,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-10.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-20.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-30.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-trio-1.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-trio-2.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-trio-3.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/candinsky-20.mp4",
+          "width": 4636,
+          "height": 4636,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-05.mp4",
+          "width": 4400,
+          "height": 1000,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-20.mp4",
+          "width": 960,
+          "height": 1280,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-30.mp4",
+          "width": 1080,
+          "height": 920,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-40.mp4",
+          "width": 960,
+          "height": 1184,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-50.mp4",
+          "width": 1740,
+          "height": 1334,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-60.mp4",
+          "width": 1280,
+          "height": 960,
+          "controls": false
+        },
+        {
+          "file": "video/b2b-30.mp4",
+          "width": 1280,
+          "height": 1280,
+          "controls": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 1920,
+      "clips": [
+        {
+          "file": "video/giga_bugs.mp4",
+          "width": 1920,
+          "height": 1080,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-10.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-20.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-30.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-trio-1.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-trio-2.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/giga-promo-trio-3.mp4",
+          "width": 1080,
+          "height": 740,
+          "controls": false
+        },
+        {
+          "file": "video/candinsky-20.mp4",
+          "width": 4636,
+          "height": 4636,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-05.mp4",
+          "width": 4400,
+          "height": 1000,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-20.mp4",
+          "width": 960,
+          "height": 1280,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-30.mp4",
+          "width": 1080,
+          "height": 920,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-40.mp4",
+          "width": 960,
+          "height": 1184,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-50.mp4",
+          "width": 1740,
+          "height": 1334,
+          "controls": false
+        },
+        {
+          "file": "video/giga-sochi-60.mp4",
+          "width": 1280,
+          "height": 960,
+          "controls": false
+        },
+        {
+          "file": "video/b2b-30.mp4",
+          "width": 1280,
+          "height": 1280,
+          "controls": false
+        }
+      ],
+      "errors": []
+    }
+  ]
+}
