@@ -8,7 +8,28 @@
     font-style: normal;
     font-weight: 100 900;
     font-display: swap;
-    src: url("InterVariable.woff2") format("woff2");
+    src: url("InterVariable-portfolio.woff2") format("woff2");
+}
+
+/* Match Inter's x-height and vertical metrics while the web font is arriving. */
+@font-face {
+    font-family: "Inter Fallback";
+    src: local("Arial");
+    font-weight: 100 500;
+    size-adjust: 105.2731%;
+    ascent-override: 92.0226%;
+    descent-override: 22.9129%;
+    line-gap-override: 0%;
+}
+
+@font-face {
+    font-family: "Inter Fallback";
+    src: local("Arial Bold");
+    font-weight: 600 900;
+    size-adjust: 105.2731%;
+    ascent-override: 92.0226%;
+    descent-override: 22.9129%;
+    line-gap-override: 0%;
 }
 
 @font-face {

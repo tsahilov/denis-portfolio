@@ -1,0 +1,107 @@
+{
+  "video/giga_bugs.mp4": {
+    "width": 1920,
+    "height": 1080,
+    "duration": 12.68,
+    "poster": "images/posters/giga_bugs.webp",
+    "bytes": 4599434
+  },
+  "video/giga-promo-10.mp4": {
+    "width": 1080,
+    "height": 740,
+    "duration": 8,
+    "poster": "images/posters/giga-promo-10.webp",
+    "bytes": 3624638
+  },
+  "video/giga-promo-20.mp4": {
+    "width": 1080,
+    "height": 740,
+    "duration": 23.76,
+    "poster": "images/posters/giga-promo-20.webp",
+    "bytes": 8221612
+  },
+  "video/giga-promo-30.mp4": {
+    "width": 1080,
+    "height": 740,
+    "duration": 18.651967,
+    "poster": "images/posters/giga-promo-30.webp",
+    "bytes": 4775837
+  },
+  "video/giga-promo-trio-1.mp4": {
+    "width": 1080,
+    "height": 740,
+    "duration": 17.08,
+    "poster": "images/posters/giga-promo-trio-1.webp",
+    "bytes": 5270517
+  },
+  "video/giga-promo-trio-2.mp4": {
+    "width": 1080,
+    "height": 740,
+    "duration": 15,
+    "poster": "images/posters/giga-promo-trio-2.webp",
+    "bytes": 2385639
+  },
+  "video/giga-promo-trio-3.mp4": {
+    "width": 1080,
+    "height": 740,
+    "duration": 17.88,
+    "poster": "images/posters/giga-promo-trio-3.webp",
+    "bytes": 4284810
+  },
+  "video/candinsky-20.mp4": {
+    "width": 4636,
+    "height": 4636,
+    "duration": 61.866667,
+    "poster": "images/posters/candinsky-20.webp",
+    "bytes": 61830588
+  },
+  "video/giga-sochi-05.mp4": {
+    "width": 4400,
+    "height": 1000,
+    "duration": 15,
+    "poster": "images/posters/giga-sochi-05.webp",
+    "bytes": 13243916
+  },
+  "video/giga-sochi-20.mp4": {
+    "width": 960,
+    "height": 1280,
+    "duration": 26,
+    "poster": "images/posters/giga-sochi-20.webp",
+    "bytes": 19593229
+  },
+  "video/giga-sochi-30.mp4": {
+    "width": 1080,
+    "height": 920,
+    "duration": 15,
+    "poster": "images/posters/giga-sochi-30.webp",
+    "bytes": 13093248
+  },
+  "video/giga-sochi-40.mp4": {
+    "width": 960,
+    "height": 1184,
+    "duration": 14,
+    "poster": "images/posters/giga-sochi-40.webp",
+    "bytes": 9527010
+  },
+  "video/giga-sochi-50.mp4": {
+    "width": 1740,
+    "height": 1334,
+    "duration": 13.983333,
+    "poster": "images/posters/giga-sochi-50.webp",
+    "bytes": 13949638
+  },
+  "video/giga-sochi-60.mp4": {
+    "width": 1280,
+    "height": 960,
+    "duration": 28,
+    "poster": "images/posters/giga-sochi-60.webp",
+    "bytes": 23249125
+  },
+  "video/b2b-30.mp4": {
+    "width": 1280,
+    "height": 1280,
+    "duration": 16.874678,
+    "poster": "images/posters/b2b-30.webp",
+    "bytes": 14773264
+  }
+}

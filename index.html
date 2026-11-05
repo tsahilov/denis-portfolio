@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
     <title>Денис Афанасьев</title>
@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/webp" href="images/fav-denis.webp">
 
-    <link rel="preload" href="/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/fonts/inter.css">
+    <link rel="preload" href="fonts/InterVariable-portfolio.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="fonts/inter.css">
     <link rel="stylesheet" href="style.css">
+    <script src="media.js" defer></script>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
 
         <!-- Фото и контакты -->
         <header class="profile-header">
-            <img class="profile-photo" src="images/avatar_denis.webp" alt="Денис Афанасьев">
+            <img class="profile-photo" src="images/avatar_denis.webp" alt="Денис Афанасьев" width="244" height="244" decoding="async">
 
             <nav class="profile-links">
                 <a href="#">CV</a>
@@ -99,64 +100,64 @@
 
             <div class="work-gallery work-gallery--1">
                 <div class="work-cover work-cover--genai">
-                    <img src="images/genai-10.webp" alt="GenAI">
+                    <img src="images/genai-10.webp" alt="GenAI" width="2704" height="592" decoding="async">
                 </div>
             </div>
 
             <div class="v-space S"></div>
 
             <div class="work-gallery work-gallery--2">
-                <img src="images/genai-11.webp" alt="">
-                <img src="images/genai-12.webp" alt="">
+                <img src="images/genai-11.webp" alt="" width="1762" height="1334" decoding="async" loading="lazy">
+                <img src="images/genai-12.webp" alt="" width="1762" height="1334" decoding="async" loading="lazy">
             </div>
 
             <div class="v-space S"></div>
 
             <!-- <div class="work-gallery work-gallery--1">
-                <img src="images/genai-40.webp" alt="">
+                <img src="images/genai-40.webp" alt="" width="2744" height="1544" decoding="async" loading="lazy">
             </div> -->
 
             <div class="v-space S"></div>
 
             <div class="work-gallery work-gallery--1">
-                <img src="images/genai-15.webp" alt="">
+                <img src="images/genai-15.webp" alt="" width="3691" height="2065" decoding="async" loading="lazy">
             </div>
 
             <div class="v-space S"></div>
 
             <div class="work-gallery work-gallery--split">
-                <img src="images/genai-20.webp" alt="">
-                <img src="images/genai-30.webp" alt="">
+                <img src="images/genai-20.webp" alt="" width="2224" height="1256" decoding="async" loading="lazy">
+                <img src="images/genai-30.webp" alt="" width="1440" height="1256" decoding="async" loading="lazy">
             </div>
 
             <div class="v-space S"></div>
 
             <div class="work-gallery work-gallery--3">
-                <img src="images/genai-trio-10.webp" alt="">
-                <img src="images/genai-trio-20.webp" alt="">
-                <img src="images/genai-trio-30.webp" alt="">
+                <img src="images/genai-trio-10.webp" alt="" width="1200" height="558" decoding="async" loading="lazy">
+                <img src="images/genai-trio-20.webp" alt="" width="1200" height="558" decoding="async" loading="lazy">
+                <img src="images/genai-trio-30.webp" alt="" width="1200" height="558" decoding="async" loading="lazy">
             </div>
 
             <div class="v-space S"></div>
 
             <div class="work-gallery work-gallery--1">
-                <img src="images/genai-55.webp" alt="">
+                <img src="images/genai-55.webp" alt="" width="3691" height="2060" decoding="async" loading="lazy">
             </div>
 
             <div class="v-space S"></div>
 
             <div class="work-gallery work-gallery--1">
                 <picture>
-                    <source media="(max-width: 767px)" srcset="images/genai-80-mobile.webp">
-                    <img src="images/genai-80.webp" alt="">
+                    <source media="(max-width: 767px)" srcset="images/genai-80-mobile.webp" width="1426" height="3232">
+                    <img src="images/genai-80.webp" alt="" width="3691" height="1428" decoding="async" loading="lazy">
                 </picture>
             </div>
 
             <div class="v-space S"></div>
 
             <div class="work-gallery work-gallery--2">
-                <img src="images/genai-85.webp" alt="">
-                <img src="images/genai-86.webp" alt="">
+                <img src="images/genai-85.webp" alt="" width="1816" height="1976" decoding="async" loading="lazy">
+                <img src="images/genai-86.webp" alt="" width="1816" height="1976" decoding="async" loading="lazy">
             </div>
         </article>
     </div>
@@ -177,9 +178,10 @@
 
             <div class="work-gallery work-gallery--1">
                 <div class="work-cover work-cover--bughunters">
-                    <video autoplay muted loop playsinline>
-                        <source src="video/giga_bugs.mp4" type="video/mp4">
+                    <video data-lazy-video muted loop playsinline preload="none" width="1920" height="1080" data-poster="images/posters/giga_bugs.webp">
+                        <source data-src="video/giga_bugs.mp4" type="video/mp4">
                     </video>
+                    <noscript><a href="video/giga_bugs.mp4">Смотреть видео</a></noscript>
                 </div>
             </div>
 
@@ -206,23 +208,26 @@
 
                 <!-- Большое видео слева -->
                 <div class="promo-main">
-                    <video autoplay muted loop playsinline>
-                        <source src="video/giga-promo-10.mp4" type="video/mp4">
+                    <video data-lazy-video muted loop playsinline preload="none" width="1080" height="740" data-poster="images/posters/giga-promo-10.webp">
+                        <source data-src="video/giga-promo-10.mp4" type="video/mp4">
                     </video>
+                    <noscript><a href="video/giga-promo-10.mp4">Смотреть видео</a></noscript>
                 </div>
 
                 <!-- Два видео справа -->
                 <div class="promo-side">
                     <div class="promo-thumb">
-                        <video autoplay muted loop playsinline>
-                            <source src="video/giga-promo-20.mp4" type="video/mp4">
-                        </video>
+                        <video data-lazy-video muted loop playsinline preload="none" width="1080" height="740" data-poster="images/posters/giga-promo-20.webp">
+                        <source data-src="video/giga-promo-20.mp4" type="video/mp4">
+                    </video>
+                    <noscript><a href="video/giga-promo-20.mp4">Смотреть видео</a></noscript>
                     </div>
 
                     <div class="promo-thumb">
-                        <video autoplay muted loop playsinline>
-                            <source src="video/giga-promo-30.mp4" type="video/mp4">
-                        </video>
+                        <video data-lazy-video muted loop playsinline preload="none" width="1080" height="740" data-poster="images/posters/giga-promo-30.webp">
+                        <source data-src="video/giga-promo-30.mp4" type="video/mp4">
+                    </video>
+                    <noscript><a href="video/giga-promo-30.mp4">Смотреть видео</a></noscript>
                     </div>
                 </div>
 
@@ -231,17 +236,20 @@
             <div class="v-space S"></div>
 
             <div class="work-gallery work-gallery--3">
-                <video autoplay muted loop playsinline>
-                    <source src="video/giga-promo-trio-1.mp4" type="video/mp4">
-                </video>
+                <video data-lazy-video muted loop playsinline preload="none" width="1080" height="740" data-poster="images/posters/giga-promo-trio-1.webp">
+                        <source data-src="video/giga-promo-trio-1.mp4" type="video/mp4">
+                    </video>
+                    <noscript><a href="video/giga-promo-trio-1.mp4">Смотреть видео</a></noscript>
 
-                <video autoplay muted loop playsinline>
-                    <source src="video/giga-promo-trio-2.mp4" type="video/mp4">
-                </video>
+                <video data-lazy-video muted loop playsinline preload="none" width="1080" height="740" data-poster="images/posters/giga-promo-trio-2.webp">
+                        <source data-src="video/giga-promo-trio-2.mp4" type="video/mp4">
+                    </video>
+                    <noscript><a href="video/giga-promo-trio-2.mp4">Смотреть видео</a></noscript>
 
-                <video autoplay muted loop playsinline>
-                    <source src="video/giga-promo-trio-3.mp4" type="video/mp4">
-                </video>
+                <video data-lazy-video muted loop playsinline preload="none" width="1080" height="740" data-poster="images/posters/giga-promo-trio-3.webp">
+                        <source data-src="video/giga-promo-trio-3.mp4" type="video/mp4">
+                    </video>
+                    <noscript><a href="video/giga-promo-trio-3.mp4">Смотреть видео</a></noscript>
             </div>
 
 
@@ -265,9 +273,9 @@
 
 
             <div class="work-gallery work-gallery--kv-trio work-gallery--mobile-scroll">
-                <img src="images/domclick-10.webp" alt="">
-                <img src="images/domclick-20.webp" alt="">
-                <img src="images/domclick-30.webp" alt="">
+                <img src="images/domclick-10.webp" alt="" width="982" height="1752" decoding="async" loading="lazy">
+                <img src="images/domclick-20.webp" alt="" width="1326" height="1750" decoding="async" loading="lazy">
+                <img src="images/domclick-30.webp" alt="" width="1328" height="1752" decoding="async" loading="lazy">
             </div>
 
         </article>
@@ -289,13 +297,13 @@
 
 
             <div class="work-gallery work-gallery--giga-ban">
-                <img src="images/giga-ban-10.webp" alt="">
-                <img src="images/giga-ban-20.webp" alt="">
+                <img src="images/giga-ban-10.webp" alt="" width="2264" height="944" decoding="async" loading="lazy">
+                <img src="images/giga-ban-20.webp" alt="" width="1380" height="944" decoding="async" loading="lazy">
             </div>
             <div class="v-space S"></div>
             <div class="work-gallery work-gallery--2">
-                <img src="images/giga-ban-30.webp" alt="">
-                <img src="images/giga-ban-40.webp" alt="">
+                <img src="images/giga-ban-30.webp" alt="" width="1826" height="1252" decoding="async" loading="lazy">
+                <img src="images/giga-ban-40.webp" alt="" width="1824" height="1252" decoding="async" loading="lazy">
             </div>
         </article>
     </div>
@@ -315,16 +323,17 @@
             <div class="v-space M"></div>
 
             <div class="work-gallery work-gallery--2">
-                <img src="images/sberai-10.webp" alt="">
-                <video autoplay muted loop playsinline>
-                    <source src="video/candinsky-20.mp4" type="video/mp4">
-                </video>
+                <img src="images/sberai-10.webp" alt="" width="1352" height="1352" decoding="async" loading="lazy">
+                <video data-lazy-video muted loop playsinline preload="none" width="4636" height="4636" data-poster="images/posters/candinsky-20.webp">
+                        <source data-src="video/candinsky-20.mp4" type="video/mp4">
+                    </video>
+                    <noscript><a href="video/candinsky-20.mp4">Смотреть видео</a></noscript>
             </div>
 
             <div class="v-space S"></div>
 
             <div class="work-gallery work-gallery--1">
-                <img src="images/sberai-30.webp" alt="">
+                <img src="images/sberai-30.webp" alt="" width="2746" height="726" decoding="async" loading="lazy">
             </div>
         </article>
     </div>
@@ -344,9 +353,9 @@
             <div class="v-space M"></div>
 
             <div class="work-gallery work-gallery--3 work-gallery--mobile-scroll">
-                <img src="images/randevu-10.webp" alt="">
-                <img src="images/randevu-20.webp" alt="">
-                <img src="images/randevu-30.webp" alt="">
+                <img src="images/randevu-10.webp" alt="" width="1208" height="1610" decoding="async" loading="lazy">
+                <img src="images/randevu-20.webp" alt="" width="1208" height="1610" decoding="async" loading="lazy">
+                <img src="images/randevu-30.webp" alt="" width="1208" height="1610" decoding="async" loading="lazy">
             </div>
         </article>
     </div>
@@ -367,11 +376,11 @@
 
 
             <div class="work-gallery work-gallery--domclick-social work-gallery--mobile-scroll">
-                <img src="images/domclick-social-10.webp" alt="">
-                <img src="images/domclick-social-20.webp" alt="">
-                <img src="images/domclick-social-30.webp" alt="">
-                <img src="images/domclick-social-40.webp" alt="">
-                <img src="images/domclick-social-50.webp" alt="">
+                <img src="images/domclick-social-10.webp" alt="" width="712" height="1266" decoding="async" loading="lazy">
+                <img src="images/domclick-social-20.webp" alt="" width="712" height="1266" decoding="async" loading="lazy">
+                <img src="images/domclick-social-30.webp" alt="" width="712" height="1266" decoding="async" loading="lazy">
+                <img src="images/domclick-social-40.webp" alt="" width="712" height="1266" decoding="async" loading="lazy">
+                <img src="images/domclick-social-50.webp" alt="" width="712" height="1266" decoding="async" loading="lazy">
             </div>
 
         </article>
@@ -396,24 +405,24 @@
             <div class="work-gallery work-gallery--ddd">
 
                 <!-- Два больших баннера -->
-                <img src="images/ddd-10.webp" alt="">
-                <img src="images/ddd-20.webp" alt="">
+                <img src="images/ddd-10.webp" alt="" width="1092" height="1092" decoding="async" loading="lazy">
+                <img src="images/ddd-20.webp" alt="" width="1092" height="1092" decoding="async" loading="lazy">
 
                 <!-- Третья колонка -->
                 <div class="ddd-column">
-                    <img src="images/ddd-30.webp" alt="">
-                    <img src="images/ddd-40.webp" alt="">
+                    <img src="images/ddd-30.webp" alt="" width="576" height="892" decoding="async" loading="lazy">
+                    <img src="images/ddd-40.webp" alt="" width="576" height="180" decoding="async" loading="lazy">
                 </div>
 
                 <!-- Четвёртая колонка -->
                 <div class="ddd-right">
-                    <img src="images/ddd-50.webp" alt="">
+                    <img src="images/ddd-50.webp" alt="" width="874" height="580" decoding="async" loading="lazy">
 
                     <div class="ddd-mini">
-                        <img src="images/ddd-60.webp" alt="">
-                        <img src="images/ddd-70.webp" alt="">
-                        <img src="images/ddd-80.webp" alt="">
-                        <img src="images/ddd-90.webp" alt="">
+                        <img src="images/ddd-60.webp" alt="" width="576" height="180" decoding="async" loading="lazy">
+                        <img src="images/ddd-70.webp" alt="" width="576" height="92" decoding="async" loading="lazy">
+                        <img src="images/ddd-80.webp" alt="" width="576" height="180" decoding="async" loading="lazy">
+                        <img src="images/ddd-90.webp" alt="" width="270" height="494" decoding="async" loading="lazy">
                     </div>
                 </div>
 
@@ -447,37 +456,43 @@
 
             <div class="v-space M"></div>
 
-            <div class="work-gallery work-gallery--1"> <video autoplay muted loop playsinline>
-                    <source src="video/giga-sochi-05.mp4" type="video/mp4">
-                </video>
+            <div class="work-gallery work-gallery--1"> <video data-lazy-video muted loop playsinline preload="none" width="4400" height="1000" data-poster="images/posters/giga-sochi-05.webp">
+                        <source data-src="video/giga-sochi-05.mp4" type="video/mp4">
+                    </video>
+                    <noscript><a href="video/giga-sochi-05.mp4">Смотреть видео</a></noscript>
             </div>
 
             <div class="v-space S"></div>
 
             <div class="work-gallery work-gallery--giga-sochi">
-                <img src="images/giga-sochi-10.webp" alt="">
-                <video autoplay muted loop playsinline>
-                    <source src="video/giga-sochi-20.mp4" type="video/mp4">
-                </video>
-                <video autoplay muted loop playsinline>
-                    <source src="video/giga-sochi-30.mp4" type="video/mp4">
-                </video>
+                <img src="images/giga-sochi-10.webp" alt="" width="1348" height="1798" decoding="async" loading="lazy">
+                <video data-lazy-video muted loop playsinline preload="none" width="960" height="1280" data-poster="images/posters/giga-sochi-20.webp">
+                        <source data-src="video/giga-sochi-20.mp4" type="video/mp4">
+                    </video>
+                    <noscript><a href="video/giga-sochi-20.mp4">Смотреть видео</a></noscript>
+                <video data-lazy-video muted loop playsinline preload="none" width="1080" height="920" data-poster="images/posters/giga-sochi-30.webp">
+                        <source data-src="video/giga-sochi-30.mp4" type="video/mp4">
+                    </video>
+                    <noscript><a href="video/giga-sochi-30.mp4">Смотреть видео</a></noscript>
             </div>
 
             <div class="v-space S"></div>
 
             <div class="work-gallery work-gallery--giga-sochi-row-2">
-                <video autoplay muted loop playsinline>
-                    <source src="video/giga-sochi-40.mp4" type="video/mp4">
-                </video>
+                <video data-lazy-video muted loop playsinline preload="none" width="960" height="1184" data-poster="images/posters/giga-sochi-40.webp">
+                        <source data-src="video/giga-sochi-40.mp4" type="video/mp4">
+                    </video>
+                    <noscript><a href="video/giga-sochi-40.mp4">Смотреть видео</a></noscript>
 
-                <video autoplay muted loop playsinline>
-                    <source src="video/giga-sochi-50.mp4" type="video/mp4">
-                </video>
+                <video data-lazy-video muted loop playsinline preload="none" width="1740" height="1334" data-poster="images/posters/giga-sochi-50.webp">
+                        <source data-src="video/giga-sochi-50.mp4" type="video/mp4">
+                    </video>
+                    <noscript><a href="video/giga-sochi-50.mp4">Смотреть видео</a></noscript>
 
-                <video autoplay muted loop playsinline>
-                    <source src="video/giga-sochi-60.mp4" type="video/mp4">
-                </video>
+                <video data-lazy-video muted loop playsinline preload="none" width="1280" height="960" data-poster="images/posters/giga-sochi-60.webp">
+                        <source data-src="video/giga-sochi-60.mp4" type="video/mp4">
+                    </video>
+                    <noscript><a href="video/giga-sochi-60.mp4">Смотреть видео</a></noscript>
             </div>
 
 
@@ -500,14 +515,15 @@
             <div class="v-space M"></div>
 
             <div class="work-gallery work-gallery--b2b-journal">
-                <img src="images/b2b-10.webp" alt="">
+                <img src="images/b2b-10.webp" alt="" width="765" height="1082" decoding="async" loading="lazy">
 
                 <div class="b2b-journal-side">
-                    <img src="images/b2b-20.webp" alt="">
+                    <img src="images/b2b-20.webp" alt="" width="1959" height="1083" decoding="async" loading="lazy">
 
-                    <video autoplay muted loop playsinline>
-                        <source src="video/b2b-30.mp4" type="video/mp4">
+                    <video data-lazy-video muted loop playsinline preload="none" width="1280" height="1280" data-poster="images/posters/b2b-30.webp">
+                        <source data-src="video/b2b-30.mp4" type="video/mp4">
                     </video>
+                    <noscript><a href="video/b2b-30.mp4">Смотреть видео</a></noscript>
                 </div>
             </div>
         </article>
