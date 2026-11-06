@@ -1,0 +1,1361 @@
+{
+  "images/avatar_denis.webp": {
+    "width": 244,
+    "height": 244,
+    "bytes": 103144,
+    "variants": [
+      {
+        "file": "images/responsive/avatar_denis-128.webp",
+        "width": 128,
+        "bytes": 7556
+      },
+      {
+        "file": "images/responsive/avatar_denis-244.webp",
+        "width": 244,
+        "bytes": 24858
+      }
+    ]
+  },
+  "images/genai-10.webp": {
+    "width": 2704,
+    "height": 592,
+    "bytes": 20858,
+    "variants": [
+      {
+        "file": "images/responsive/genai-10-384.webp",
+        "width": 384,
+        "bytes": 3054
+      },
+      {
+        "file": "images/responsive/genai-10-768.webp",
+        "width": 768,
+        "bytes": 6458
+      },
+      {
+        "file": "images/responsive/genai-10-1152.webp",
+        "width": 1152,
+        "bytes": 10554
+      },
+      {
+        "file": "images/responsive/genai-10-1920.webp",
+        "width": 1920,
+        "bytes": 20040
+      },
+      {
+        "file": "images/responsive/genai-10-2704.webp",
+        "width": 2704,
+        "bytes": 10952
+      }
+    ]
+  },
+  "images/genai-11.webp": {
+    "width": 1762,
+    "height": 1334,
+    "bytes": 966008,
+    "variants": [
+      {
+        "file": "images/responsive/genai-11-384.webp",
+        "width": 384,
+        "bytes": 26890
+      },
+      {
+        "file": "images/responsive/genai-11-768.webp",
+        "width": 768,
+        "bytes": 84818
+      },
+      {
+        "file": "images/responsive/genai-11-1152.webp",
+        "width": 1152,
+        "bytes": 149136
+      },
+      {
+        "file": "images/responsive/genai-11-1762.webp",
+        "width": 1762,
+        "bytes": 302372
+      }
+    ]
+  },
+  "images/genai-12.webp": {
+    "width": 1762,
+    "height": 1334,
+    "bytes": 678212,
+    "variants": [
+      {
+        "file": "images/responsive/genai-12-384.webp",
+        "width": 384,
+        "bytes": 2774
+      },
+      {
+        "file": "images/responsive/genai-12-768.webp",
+        "width": 768,
+        "bytes": 6110
+      },
+      {
+        "file": "images/responsive/genai-12-1152.webp",
+        "width": 1152,
+        "bytes": 9352
+      },
+      {
+        "file": "images/responsive/genai-12-1762.webp",
+        "width": 1762,
+        "bytes": 15900
+      }
+    ]
+  },
+  "images/genai-15.webp": {
+    "width": 3691,
+    "height": 2065,
+    "bytes": 3322848,
+    "variants": [
+      {
+        "file": "images/responsive/genai-15-384.webp",
+        "width": 384,
+        "bytes": 19934
+      },
+      {
+        "file": "images/responsive/genai-15-768.webp",
+        "width": 768,
+        "bytes": 61968
+      },
+      {
+        "file": "images/responsive/genai-15-1152.webp",
+        "width": 1152,
+        "bytes": 117014
+      },
+      {
+        "file": "images/responsive/genai-15-1920.webp",
+        "width": 1920,
+        "bytes": 240860
+      },
+      {
+        "file": "images/responsive/genai-15-3691.webp",
+        "width": 3691,
+        "bytes": 754876
+      }
+    ]
+  },
+  "images/genai-20.webp": {
+    "width": 2224,
+    "height": 1256,
+    "bytes": 525486,
+    "variants": [
+      {
+        "file": "images/responsive/genai-20-384.webp",
+        "width": 384,
+        "bytes": 12412
+      },
+      {
+        "file": "images/responsive/genai-20-768.webp",
+        "width": 768,
+        "bytes": 28086
+      },
+      {
+        "file": "images/responsive/genai-20-1152.webp",
+        "width": 1152,
+        "bytes": 43786
+      },
+      {
+        "file": "images/responsive/genai-20-1920.webp",
+        "width": 1920,
+        "bytes": 76134
+      },
+      {
+        "file": "images/responsive/genai-20-2224.webp",
+        "width": 2224,
+        "bytes": 98106
+      }
+    ]
+  },
+  "images/genai-30.webp": {
+    "width": 1440,
+    "height": 1256,
+    "bytes": 1174876,
+    "variants": [
+      {
+        "file": "images/responsive/genai-30-384.webp",
+        "width": 384,
+        "bytes": 28234
+      },
+      {
+        "file": "images/responsive/genai-30-768.webp",
+        "width": 768,
+        "bytes": 84584
+      },
+      {
+        "file": "images/responsive/genai-30-1152.webp",
+        "width": 1152,
+        "bytes": 147734
+      },
+      {
+        "file": "images/responsive/genai-30-1440.webp",
+        "width": 1440,
+        "bytes": 237662
+      }
+    ]
+  },
+  "images/genai-trio-10.webp": {
+    "width": 1200,
+    "height": 558,
+    "bytes": 229200,
+    "variants": [
+      {
+        "file": "images/responsive/genai-trio-10-384.webp",
+        "width": 384,
+        "bytes": 12730
+      },
+      {
+        "file": "images/responsive/genai-trio-10-768.webp",
+        "width": 768,
+        "bytes": 28772
+      },
+      {
+        "file": "images/responsive/genai-trio-10-1152.webp",
+        "width": 1152,
+        "bytes": 43238
+      },
+      {
+        "file": "images/responsive/genai-trio-10-1200.webp",
+        "width": 1200,
+        "bytes": 48060
+      }
+    ]
+  },
+  "images/genai-trio-20.webp": {
+    "width": 1200,
+    "height": 558,
+    "bytes": 190206,
+    "variants": [
+      {
+        "file": "images/responsive/genai-trio-20-384.webp",
+        "width": 384,
+        "bytes": 9558
+      },
+      {
+        "file": "images/responsive/genai-trio-20-768.webp",
+        "width": 768,
+        "bytes": 24610
+      },
+      {
+        "file": "images/responsive/genai-trio-20-1152.webp",
+        "width": 1152,
+        "bytes": 40768
+      },
+      {
+        "file": "images/responsive/genai-trio-20-1200.webp",
+        "width": 1200,
+        "bytes": 48478
+      }
+    ]
+  },
+  "images/genai-trio-30.webp": {
+    "width": 1200,
+    "height": 558,
+    "bytes": 220378,
+    "variants": [
+      {
+        "file": "images/responsive/genai-trio-30-384.webp",
+        "width": 384,
+        "bytes": 11752
+      },
+      {
+        "file": "images/responsive/genai-trio-30-768.webp",
+        "width": 768,
+        "bytes": 29170
+      },
+      {
+        "file": "images/responsive/genai-trio-30-1152.webp",
+        "width": 1152,
+        "bytes": 47556
+      },
+      {
+        "file": "images/responsive/genai-trio-30-1200.webp",
+        "width": 1200,
+        "bytes": 55164
+      }
+    ]
+  },
+  "images/genai-55.webp": {
+    "width": 3691,
+    "height": 2060,
+    "bytes": 2416488,
+    "variants": [
+      {
+        "file": "images/responsive/genai-55-384.webp",
+        "width": 384,
+        "bytes": 17644
+      },
+      {
+        "file": "images/responsive/genai-55-768.webp",
+        "width": 768,
+        "bytes": 52868
+      },
+      {
+        "file": "images/responsive/genai-55-1152.webp",
+        "width": 1152,
+        "bytes": 96344
+      },
+      {
+        "file": "images/responsive/genai-55-1920.webp",
+        "width": 1920,
+        "bytes": 205678
+      },
+      {
+        "file": "images/responsive/genai-55-3691.webp",
+        "width": 3691,
+        "bytes": 621250
+      }
+    ]
+  },
+  "images/genai-80-mobile.webp": {
+    "width": 1426,
+    "height": 3232,
+    "bytes": 1184878,
+    "variants": [
+      {
+        "file": "images/responsive/genai-80-mobile-384.webp",
+        "width": 384,
+        "bytes": 42458
+      },
+      {
+        "file": "images/responsive/genai-80-mobile-768.webp",
+        "width": 768,
+        "bytes": 90894
+      },
+      {
+        "file": "images/responsive/genai-80-mobile-1152.webp",
+        "width": 1152,
+        "bytes": 140982
+      },
+      {
+        "file": "images/responsive/genai-80-mobile-1426.webp",
+        "width": 1426,
+        "bytes": 180274
+      }
+    ]
+  },
+  "images/genai-80.webp": {
+    "width": 3691,
+    "height": 1428,
+    "bytes": 1414806,
+    "variants": [
+      {
+        "file": "images/responsive/genai-80-384.webp",
+        "width": 384,
+        "bytes": 15744
+      },
+      {
+        "file": "images/responsive/genai-80-768.webp",
+        "width": 768,
+        "bytes": 35706
+      },
+      {
+        "file": "images/responsive/genai-80-1152.webp",
+        "width": 1152,
+        "bytes": 60670
+      },
+      {
+        "file": "images/responsive/genai-80-1920.webp",
+        "width": 1920,
+        "bytes": 128480
+      },
+      {
+        "file": "images/responsive/genai-80-3691.webp",
+        "width": 3691,
+        "bytes": 277522
+      }
+    ]
+  },
+  "images/genai-85.webp": {
+    "width": 1816,
+    "height": 1976,
+    "bytes": 792168,
+    "variants": [
+      {
+        "file": "images/responsive/genai-85-384.webp",
+        "width": 384,
+        "bytes": 16838
+      },
+      {
+        "file": "images/responsive/genai-85-768.webp",
+        "width": 768,
+        "bytes": 38442
+      },
+      {
+        "file": "images/responsive/genai-85-1152.webp",
+        "width": 1152,
+        "bytes": 59828
+      },
+      {
+        "file": "images/responsive/genai-85-1816.webp",
+        "width": 1816,
+        "bytes": 104672
+      }
+    ]
+  },
+  "images/genai-86.webp": {
+    "width": 1816,
+    "height": 1976,
+    "bytes": 1303642,
+    "variants": [
+      {
+        "file": "images/responsive/genai-86-384.webp",
+        "width": 384,
+        "bytes": 15118
+      },
+      {
+        "file": "images/responsive/genai-86-768.webp",
+        "width": 768,
+        "bytes": 43292
+      },
+      {
+        "file": "images/responsive/genai-86-1152.webp",
+        "width": 1152,
+        "bytes": 80224
+      },
+      {
+        "file": "images/responsive/genai-86-1816.webp",
+        "width": 1816,
+        "bytes": 173884
+      }
+    ]
+  },
+  "video/giga_bugs.mp4": {
+    "width": 1920,
+    "height": 1080,
+    "bytes": 4599434,
+    "variants": [
+      {
+        "file": "video/optimized/giga_bugs-768.mp4",
+        "width": 768,
+        "bytes": 631687
+      },
+      {
+        "file": "video/optimized/giga_bugs-1536.mp4",
+        "width": 1536,
+        "bytes": 1214463
+      },
+      {
+        "file": "video/optimized/giga_bugs-1920.mp4",
+        "width": 1920,
+        "bytes": 1495709
+      }
+    ],
+    "poster": "images/posters/giga_bugs.webp"
+  },
+  "video/giga-promo-10.mp4": {
+    "width": 1080,
+    "height": 740,
+    "bytes": 3624638,
+    "variants": [
+      {
+        "file": "video/optimized/giga-promo-10-768.mp4",
+        "width": 768,
+        "bytes": 685587
+      },
+      {
+        "file": "video/optimized/giga-promo-10-1080.mp4",
+        "width": 1080,
+        "bytes": 1243046
+      }
+    ],
+    "poster": "images/posters/giga-promo-10.webp"
+  },
+  "video/giga-promo-20.mp4": {
+    "width": 1080,
+    "height": 740,
+    "bytes": 8221612,
+    "variants": [
+      {
+        "file": "video/optimized/giga-promo-20-768.mp4",
+        "width": 768,
+        "bytes": 1368662
+      },
+      {
+        "file": "video/optimized/giga-promo-20-1080.mp4",
+        "width": 1080,
+        "bytes": 2038053
+      }
+    ],
+    "poster": "images/posters/giga-promo-20.webp"
+  },
+  "video/giga-promo-30.mp4": {
+    "width": 1080,
+    "height": 740,
+    "bytes": 4775837,
+    "variants": [
+      {
+        "file": "video/optimized/giga-promo-30-768.mp4",
+        "width": 768,
+        "bytes": 1771362
+      },
+      {
+        "file": "video/optimized/giga-promo-30-1080.mp4",
+        "width": 1080,
+        "bytes": 3059746
+      }
+    ],
+    "poster": "images/posters/giga-promo-30.webp"
+  },
+  "video/giga-promo-trio-1.mp4": {
+    "width": 1080,
+    "height": 740,
+    "bytes": 5270517,
+    "variants": [
+      {
+        "file": "video/optimized/giga-promo-trio-1-768.mp4",
+        "width": 768,
+        "bytes": 808235
+      },
+      {
+        "file": "video/optimized/giga-promo-trio-1-1080.mp4",
+        "width": 1080,
+        "bytes": 1296047
+      }
+    ],
+    "poster": "images/posters/giga-promo-trio-1.webp"
+  },
+  "video/giga-promo-trio-2.mp4": {
+    "width": 1080,
+    "height": 740,
+    "bytes": 2385639,
+    "variants": [
+      {
+        "file": "video/optimized/giga-promo-trio-2-768.mp4",
+        "width": 768,
+        "bytes": 380444
+      },
+      {
+        "file": "video/optimized/giga-promo-trio-2-1080.mp4",
+        "width": 1080,
+        "bytes": 643294
+      }
+    ],
+    "poster": "images/posters/giga-promo-trio-2.webp"
+  },
+  "video/giga-promo-trio-3.mp4": {
+    "width": 1080,
+    "height": 740,
+    "bytes": 4284810,
+    "variants": [
+      {
+        "file": "video/optimized/giga-promo-trio-3-768.mp4",
+        "width": 768,
+        "bytes": 983458
+      },
+      {
+        "file": "video/optimized/giga-promo-trio-3-1080.mp4",
+        "width": 1080,
+        "bytes": 1511183
+      }
+    ],
+    "poster": "images/posters/giga-promo-trio-3.webp"
+  },
+  "images/domclick-10.webp": {
+    "width": 982,
+    "height": 1752,
+    "bytes": 1435950,
+    "variants": [
+      {
+        "file": "images/responsive/domclick-10-384.webp",
+        "width": 384,
+        "bytes": 49740
+      },
+      {
+        "file": "images/responsive/domclick-10-768.webp",
+        "width": 768,
+        "bytes": 139278
+      },
+      {
+        "file": "images/responsive/domclick-10-982.webp",
+        "width": 982,
+        "bytes": 226708
+      }
+    ]
+  },
+  "images/domclick-20.webp": {
+    "width": 1326,
+    "height": 1750,
+    "bytes": 2602036,
+    "variants": [
+      {
+        "file": "images/responsive/domclick-20-384.webp",
+        "width": 384,
+        "bytes": 52900
+      },
+      {
+        "file": "images/responsive/domclick-20-768.webp",
+        "width": 768,
+        "bytes": 180710
+      },
+      {
+        "file": "images/responsive/domclick-20-1152.webp",
+        "width": 1152,
+        "bytes": 353098
+      },
+      {
+        "file": "images/responsive/domclick-20-1326.webp",
+        "width": 1326,
+        "bytes": 517142
+      }
+    ]
+  },
+  "images/domclick-30.webp": {
+    "width": 1328,
+    "height": 1752,
+    "bytes": 3019100,
+    "variants": [
+      {
+        "file": "images/responsive/domclick-30-384.webp",
+        "width": 384,
+        "bytes": 63834
+      },
+      {
+        "file": "images/responsive/domclick-30-768.webp",
+        "width": 768,
+        "bytes": 236742
+      },
+      {
+        "file": "images/responsive/domclick-30-1152.webp",
+        "width": 1152,
+        "bytes": 484410
+      },
+      {
+        "file": "images/responsive/domclick-30-1328.webp",
+        "width": 1328,
+        "bytes": 712940
+      }
+    ]
+  },
+  "images/giga-ban-10.webp": {
+    "width": 2264,
+    "height": 944,
+    "bytes": 1304178,
+    "variants": [
+      {
+        "file": "images/responsive/giga-ban-10-384.webp",
+        "width": 384,
+        "bytes": 18616
+      },
+      {
+        "file": "images/responsive/giga-ban-10-768.webp",
+        "width": 768,
+        "bytes": 51436
+      },
+      {
+        "file": "images/responsive/giga-ban-10-1152.webp",
+        "width": 1152,
+        "bytes": 85582
+      },
+      {
+        "file": "images/responsive/giga-ban-10-1920.webp",
+        "width": 1920,
+        "bytes": 144400
+      },
+      {
+        "file": "images/responsive/giga-ban-10-2264.webp",
+        "width": 2264,
+        "bytes": 179510
+      }
+    ]
+  },
+  "images/giga-ban-20.webp": {
+    "width": 1380,
+    "height": 944,
+    "bytes": 713332,
+    "variants": [
+      {
+        "file": "images/responsive/giga-ban-20-384.webp",
+        "width": 384,
+        "bytes": 14704
+      },
+      {
+        "file": "images/responsive/giga-ban-20-768.webp",
+        "width": 768,
+        "bytes": 33080
+      },
+      {
+        "file": "images/responsive/giga-ban-20-1152.webp",
+        "width": 1152,
+        "bytes": 54014
+      },
+      {
+        "file": "images/responsive/giga-ban-20-1380.webp",
+        "width": 1380,
+        "bytes": 68244
+      }
+    ]
+  },
+  "images/giga-ban-30.webp": {
+    "width": 1826,
+    "height": 1252,
+    "bytes": 1010034,
+    "variants": [
+      {
+        "file": "images/responsive/giga-ban-30-384.webp",
+        "width": 384,
+        "bytes": 19336
+      },
+      {
+        "file": "images/responsive/giga-ban-30-768.webp",
+        "width": 768,
+        "bytes": 44522
+      },
+      {
+        "file": "images/responsive/giga-ban-30-1152.webp",
+        "width": 1152,
+        "bytes": 70228
+      },
+      {
+        "file": "images/responsive/giga-ban-30-1826.webp",
+        "width": 1826,
+        "bytes": 123736
+      }
+    ]
+  },
+  "images/giga-ban-40.webp": {
+    "width": 1824,
+    "height": 1252,
+    "bytes": 1286916,
+    "variants": [
+      {
+        "file": "images/responsive/giga-ban-40-384.webp",
+        "width": 384,
+        "bytes": 15058
+      },
+      {
+        "file": "images/responsive/giga-ban-40-768.webp",
+        "width": 768,
+        "bytes": 37618
+      },
+      {
+        "file": "images/responsive/giga-ban-40-1152.webp",
+        "width": 1152,
+        "bytes": 63134
+      },
+      {
+        "file": "images/responsive/giga-ban-40-1824.webp",
+        "width": 1824,
+        "bytes": 118274
+      }
+    ]
+  },
+  "video/candinsky-10.mp4": {
+    "width": 4636,
+    "height": 4636,
+    "bytes": 57272558,
+    "variants": [
+      {
+        "file": "video/optimized/candinsky-10-768.mp4",
+        "width": 768,
+        "bytes": 11976740
+      },
+      {
+        "file": "video/optimized/candinsky-10-1536.mp4",
+        "width": 1536,
+        "bytes": 36820175
+      },
+      {
+        "file": "video/optimized/candinsky-10-1834.mp4",
+        "width": 1834,
+        "bytes": 50120741
+      }
+    ],
+    "poster": "images/posters/candinsky-10.webp"
+  },
+  "video/candinsky-20.mp4": {
+    "width": 4636,
+    "height": 4636,
+    "bytes": 61830588,
+    "variants": [
+      {
+        "file": "video/optimized/candinsky-20-768.mp4",
+        "width": 768,
+        "bytes": 10896907
+      },
+      {
+        "file": "video/optimized/candinsky-20-1536.mp4",
+        "width": 1536,
+        "bytes": 31529666
+      },
+      {
+        "file": "video/optimized/candinsky-20-1834.mp4",
+        "width": 1834,
+        "bytes": 41857241
+      }
+    ],
+    "poster": "images/posters/candinsky-20.webp"
+  },
+  "images/sberai-30.webp": {
+    "width": 2746,
+    "height": 726,
+    "bytes": 1044400,
+    "variants": [
+      {
+        "file": "images/responsive/sberai-30-384.webp",
+        "width": 384,
+        "bytes": 10194
+      },
+      {
+        "file": "images/responsive/sberai-30-768.webp",
+        "width": 768,
+        "bytes": 30176
+      },
+      {
+        "file": "images/responsive/sberai-30-1152.webp",
+        "width": 1152,
+        "bytes": 56876
+      },
+      {
+        "file": "images/responsive/sberai-30-1920.webp",
+        "width": 1920,
+        "bytes": 120646
+      },
+      {
+        "file": "images/responsive/sberai-30-2746.webp",
+        "width": 2746,
+        "bytes": 210316
+      }
+    ]
+  },
+  "images/randevu-10.webp": {
+    "width": 1208,
+    "height": 1610,
+    "bytes": 2368430,
+    "variants": [
+      {
+        "file": "images/responsive/randevu-10-384.webp",
+        "width": 384,
+        "bytes": 24028
+      },
+      {
+        "file": "images/responsive/randevu-10-768.webp",
+        "width": 768,
+        "bytes": 77224
+      },
+      {
+        "file": "images/responsive/randevu-10-1152.webp",
+        "width": 1152,
+        "bytes": 168030
+      },
+      {
+        "file": "images/responsive/randevu-10-1208.webp",
+        "width": 1208,
+        "bytes": 233906
+      }
+    ]
+  },
+  "images/randevu-20.webp": {
+    "width": 1208,
+    "height": 1610,
+    "bytes": 482584,
+    "variants": [
+      {
+        "file": "images/responsive/randevu-20-384.webp",
+        "width": 384,
+        "bytes": 14852
+      },
+      {
+        "file": "images/responsive/randevu-20-768.webp",
+        "width": 768,
+        "bytes": 37492
+      },
+      {
+        "file": "images/responsive/randevu-20-1152.webp",
+        "width": 1152,
+        "bytes": 61178
+      },
+      {
+        "file": "images/responsive/randevu-20-1208.webp",
+        "width": 1208,
+        "bytes": 70460
+      }
+    ]
+  },
+  "images/randevu-30.webp": {
+    "width": 1208,
+    "height": 1610,
+    "bytes": 937446,
+    "variants": [
+      {
+        "file": "images/responsive/randevu-30-384.webp",
+        "width": 384,
+        "bytes": 26166
+      },
+      {
+        "file": "images/responsive/randevu-30-768.webp",
+        "width": 768,
+        "bytes": 72242
+      },
+      {
+        "file": "images/responsive/randevu-30-1152.webp",
+        "width": 1152,
+        "bytes": 122656
+      },
+      {
+        "file": "images/responsive/randevu-30-1208.webp",
+        "width": 1208,
+        "bytes": 145364
+      }
+    ]
+  },
+  "images/domclick-social-10.webp": {
+    "width": 712,
+    "height": 1266,
+    "bytes": 652860,
+    "variants": [
+      {
+        "file": "images/responsive/domclick-social-10-384.webp",
+        "width": 384,
+        "bytes": 38460
+      },
+      {
+        "file": "images/responsive/domclick-social-10-712.webp",
+        "width": 712,
+        "bytes": 92282
+      }
+    ]
+  },
+  "images/domclick-social-20.webp": {
+    "width": 712,
+    "height": 1266,
+    "bytes": 457058,
+    "variants": [
+      {
+        "file": "images/responsive/domclick-social-20-384.webp",
+        "width": 384,
+        "bytes": 36126
+      },
+      {
+        "file": "images/responsive/domclick-social-20-712.webp",
+        "width": 712,
+        "bytes": 73878
+      }
+    ]
+  },
+  "images/domclick-social-30.webp": {
+    "width": 712,
+    "height": 1266,
+    "bytes": 747274,
+    "variants": [
+      {
+        "file": "images/responsive/domclick-social-30-384.webp",
+        "width": 384,
+        "bytes": 44660
+      },
+      {
+        "file": "images/responsive/domclick-social-30-712.webp",
+        "width": 712,
+        "bytes": 115694
+      }
+    ]
+  },
+  "images/domclick-social-40.webp": {
+    "width": 712,
+    "height": 1266,
+    "bytes": 499444,
+    "variants": [
+      {
+        "file": "images/responsive/domclick-social-40-384.webp",
+        "width": 384,
+        "bytes": 21162
+      },
+      {
+        "file": "images/responsive/domclick-social-40-712.webp",
+        "width": 712,
+        "bytes": 46806
+      }
+    ]
+  },
+  "images/domclick-social-50.webp": {
+    "width": 712,
+    "height": 1266,
+    "bytes": 687766,
+    "variants": [
+      {
+        "file": "images/responsive/domclick-social-50-384.webp",
+        "width": 384,
+        "bytes": 29222
+      },
+      {
+        "file": "images/responsive/domclick-social-50-712.webp",
+        "width": 712,
+        "bytes": 72874
+      }
+    ]
+  },
+  "images/ddd-10.webp": {
+    "width": 1092,
+    "height": 1092,
+    "bytes": 1002372,
+    "variants": [
+      {
+        "file": "images/responsive/ddd-10-384.webp",
+        "width": 384,
+        "bytes": 22626
+      },
+      {
+        "file": "images/responsive/ddd-10-768.webp",
+        "width": 768,
+        "bytes": 55336
+      },
+      {
+        "file": "images/responsive/ddd-10-1092.webp",
+        "width": 1092,
+        "bytes": 100218
+      }
+    ]
+  },
+  "images/ddd-20.webp": {
+    "width": 1092,
+    "height": 1092,
+    "bytes": 1081682,
+    "variants": [
+      {
+        "file": "images/responsive/ddd-20-384.webp",
+        "width": 384,
+        "bytes": 31388
+      },
+      {
+        "file": "images/responsive/ddd-20-768.webp",
+        "width": 768,
+        "bytes": 80352
+      },
+      {
+        "file": "images/responsive/ddd-20-1092.webp",
+        "width": 1092,
+        "bytes": 141490
+      }
+    ]
+  },
+  "images/ddd-30.webp": {
+    "width": 576,
+    "height": 892,
+    "bytes": 443850,
+    "variants": [
+      {
+        "file": "images/responsive/ddd-30-384.webp",
+        "width": 384,
+        "bytes": 39882
+      },
+      {
+        "file": "images/responsive/ddd-30-576.webp",
+        "width": 576,
+        "bytes": 67222
+      }
+    ]
+  },
+  "images/ddd-40.webp": {
+    "width": 576,
+    "height": 180,
+    "bytes": 105410,
+    "variants": [
+      {
+        "file": "images/responsive/ddd-40-384.webp",
+        "width": 384,
+        "bytes": 12708
+      },
+      {
+        "file": "images/responsive/ddd-40-576.webp",
+        "width": 576,
+        "bytes": 23442
+      }
+    ]
+  },
+  "images/ddd-50.webp": {
+    "width": 874,
+    "height": 580,
+    "bytes": 469218,
+    "variants": [
+      {
+        "file": "images/responsive/ddd-50-384.webp",
+        "width": 384,
+        "bytes": 25682
+      },
+      {
+        "file": "images/responsive/ddd-50-768.webp",
+        "width": 768,
+        "bytes": 63052
+      },
+      {
+        "file": "images/responsive/ddd-50-874.webp",
+        "width": 874,
+        "bytes": 80866
+      }
+    ]
+  },
+  "images/ddd-60.webp": {
+    "width": 576,
+    "height": 180,
+    "bytes": 102340,
+    "variants": [
+      {
+        "file": "images/responsive/ddd-60-384.webp",
+        "width": 384,
+        "bytes": 12466
+      },
+      {
+        "file": "images/responsive/ddd-60-576.webp",
+        "width": 576,
+        "bytes": 22304
+      }
+    ]
+  },
+  "images/ddd-70.webp": {
+    "width": 576,
+    "height": 92,
+    "bytes": 49706,
+    "variants": [
+      {
+        "file": "images/responsive/ddd-70-384.webp",
+        "width": 384,
+        "bytes": 7164
+      },
+      {
+        "file": "images/responsive/ddd-70-576.webp",
+        "width": 576,
+        "bytes": 12878
+      }
+    ]
+  },
+  "images/ddd-80.webp": {
+    "width": 576,
+    "height": 180,
+    "bytes": 113960,
+    "variants": [
+      {
+        "file": "images/responsive/ddd-80-384.webp",
+        "width": 384,
+        "bytes": 12264
+      },
+      {
+        "file": "images/responsive/ddd-80-576.webp",
+        "width": 576,
+        "bytes": 22542
+      }
+    ]
+  },
+  "images/ddd-90.webp": {
+    "width": 270,
+    "height": 494,
+    "bytes": 137266,
+    "variants": [
+      {
+        "file": "images/responsive/ddd-90-270.webp",
+        "width": 270,
+        "bytes": 23402
+      }
+    ]
+  },
+  "video/giga-sochi-05.mp4": {
+    "width": 4400,
+    "height": 1000,
+    "bytes": 13243916,
+    "variants": [
+      {
+        "file": "video/optimized/giga-sochi-05-768.mp4",
+        "width": 768,
+        "bytes": 755498
+      },
+      {
+        "file": "video/optimized/giga-sochi-05-1536.mp4",
+        "width": 1536,
+        "bytes": 1969107
+      },
+      {
+        "file": "video/optimized/giga-sochi-05-3688.mp4",
+        "width": 3688,
+        "bytes": 8414511
+      }
+    ],
+    "poster": "images/posters/giga-sochi-05.webp"
+  },
+  "images/giga-sochi-10.webp": {
+    "width": 1348,
+    "height": 1798,
+    "bytes": 1037830,
+    "variants": [
+      {
+        "file": "images/responsive/giga-sochi-10-384.webp",
+        "width": 384,
+        "bytes": 46018
+      },
+      {
+        "file": "images/responsive/giga-sochi-10-768.webp",
+        "width": 768,
+        "bytes": 122152
+      },
+      {
+        "file": "images/responsive/giga-sochi-10-1152.webp",
+        "width": 1152,
+        "bytes": 193918
+      },
+      {
+        "file": "images/responsive/giga-sochi-10-1348.webp",
+        "width": 1348,
+        "bytes": 246616
+      }
+    ]
+  },
+  "video/giga-sochi-20.mp4": {
+    "width": 960,
+    "height": 1280,
+    "bytes": 19593229,
+    "variants": [
+      {
+        "file": "video/optimized/giga-sochi-20-768.mp4",
+        "width": 768,
+        "bytes": 2539027
+      },
+      {
+        "file": "video/optimized/giga-sochi-20-960.mp4",
+        "width": 960,
+        "bytes": 3769454
+      }
+    ],
+    "poster": "images/posters/giga-sochi-20.webp"
+  },
+  "video/giga-sochi-30.mp4": {
+    "width": 1080,
+    "height": 920,
+    "bytes": 13093248,
+    "variants": [
+      {
+        "file": "video/optimized/giga-sochi-30-768.mp4",
+        "width": 768,
+        "bytes": 574397
+      },
+      {
+        "file": "video/optimized/giga-sochi-30-1080.mp4",
+        "width": 1080,
+        "bytes": 1024074
+      }
+    ],
+    "poster": "images/posters/giga-sochi-30.webp"
+  },
+  "video/giga-sochi-40.mp4": {
+    "width": 960,
+    "height": 1184,
+    "bytes": 9527010,
+    "variants": [
+      {
+        "file": "video/optimized/giga-sochi-40-768.mp4",
+        "width": 768,
+        "bytes": 1416138
+      },
+      {
+        "file": "video/optimized/giga-sochi-40-960.mp4",
+        "width": 960,
+        "bytes": 2106136
+      }
+    ],
+    "poster": "images/posters/giga-sochi-40.webp"
+  },
+  "video/giga-sochi-50.mp4": {
+    "width": 1740,
+    "height": 1334,
+    "bytes": 13949638,
+    "variants": [
+      {
+        "file": "video/optimized/giga-sochi-50-768.mp4",
+        "width": 768,
+        "bytes": 1228333
+      },
+      {
+        "file": "video/optimized/giga-sochi-50-1536.mp4",
+        "width": 1536,
+        "bytes": 4213693
+      },
+      {
+        "file": "video/optimized/giga-sochi-50-1740.mp4",
+        "width": 1740,
+        "bytes": 5318445
+      }
+    ],
+    "poster": "images/posters/giga-sochi-50.webp"
+  },
+  "video/giga-sochi-60.mp4": {
+    "width": 1280,
+    "height": 960,
+    "bytes": 23249125,
+    "variants": [
+      {
+        "file": "video/optimized/giga-sochi-60-768.mp4",
+        "width": 768,
+        "bytes": 1359178
+      },
+      {
+        "file": "video/optimized/giga-sochi-60-1280.mp4",
+        "width": 1280,
+        "bytes": 3110000
+      }
+    ],
+    "poster": "images/posters/giga-sochi-60.webp"
+  },
+  "images/b2b-10.webp": {
+    "width": 765,
+    "height": 1082,
+    "bytes": 460156,
+    "variants": [
+      {
+        "file": "images/responsive/b2b-10-384.webp",
+        "width": 384,
+        "bytes": 31962
+      },
+      {
+        "file": "images/responsive/b2b-10-765.webp",
+        "width": 765,
+        "bytes": 76242
+      }
+    ]
+  },
+  "images/b2b-20.webp": {
+    "width": 1959,
+    "height": 1083,
+    "bytes": 678734,
+    "variants": [
+      {
+        "file": "images/responsive/b2b-20-384.webp",
+        "width": 384,
+        "bytes": 12060
+      },
+      {
+        "file": "images/responsive/b2b-20-768.webp",
+        "width": 768,
+        "bytes": 31662
+      },
+      {
+        "file": "images/responsive/b2b-20-1152.webp",
+        "width": 1152,
+        "bytes": 50550
+      },
+      {
+        "file": "images/responsive/b2b-20-1920.webp",
+        "width": 1920,
+        "bytes": 85186
+      },
+      {
+        "file": "images/responsive/b2b-20-1959.webp",
+        "width": 1959,
+        "bytes": 94322
+      }
+    ]
+  },
+  "video/b2b-30.mp4": {
+    "width": 1280,
+    "height": 1280,
+    "bytes": 14773264,
+    "variants": [
+      {
+        "file": "video/optimized/b2b-30-768.mp4",
+        "width": 768,
+        "bytes": 4999177
+      },
+      {
+        "file": "video/optimized/b2b-30-1280.mp4",
+        "width": 1280,
+        "bytes": 13217077
+      }
+    ],
+    "poster": "images/posters/b2b-30.webp"
+  }
+}

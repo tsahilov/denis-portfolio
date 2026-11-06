@@ -14,7 +14,15 @@
         if (video.dataset.loaded) return;
         video.dataset.loaded = 'true';
         // Assigning the media URL lets native controls initialize while respecting preload=none.
-        video.src = video.querySelector('source').dataset.src;
+        const source = video.querySelector('source');
+        const variants = JSON.parse(source.dataset.variants || '[]');
+        // Choose once, before any MP4 request. Keep the chosen source when scrolling/resizing.
+        const box = video.getBoundingClientRect();
+        const aspect = Number(video.getAttribute('width')) / Number(video.getAttribute('height'));
+        const displayWidth = getComputedStyle(video).objectFit === 'cover'
+            ? Math.max(box.width, box.height * aspect) : box.width;
+        const requiredWidth = displayWidth * Math.min(devicePixelRatio || 1, 2);
+        video.src = (variants.find(variant => variant.width >= requiredWidth) || variants.at(-1))?.src || source.dataset.src;
     }
 
     function update(video) {

@@ -114,7 +114,7 @@ await context.close();results.push({extra});console.log('extra checks',JSON.stri
 const assert=require('assert/strict');
 for(const r of results.filter(r=>r.checks)){assert(r.checks.playing.playing);assert(r.checks.paused);assert(r.checks.hiddenPaused);assert(r.checks.reduced.paused&&r.checks.reduced.controls);assert(r.checks.manual);assert.equal(r.checks.broken.length,0);assert(!r.overflow);}
 for(const mode of ['reduce','saveData','noObserver']){assert(extra[mode].paused&&extra[mode].controls);assert.equal(extra[mode].videoRequests,0);assert(extra[mode].manual);}
-assert.equal(extra.noJS.links,15);assert(extra.widths.every(w=>!w.overflow));
+assert.equal(extra.noJS.links,16);assert(extra.widths.every(w=>!w.overflow));
 }
 fs.writeFileSync(path.join(resultDir,`${process.argv[2]||'before'}.json`),JSON.stringify(results,null,2));
 console.log(results.map(r=>({label:r.label,width:r.width,lcp:r.lcp,cls:r.cls,requests:r.resources?.length,bytes:r.resources?.reduce((a,b)=>a+b.bytes,0),playing:r.videos?.filter(v=>v.playing).length,error:r.error,overflow:r.overflow})));
