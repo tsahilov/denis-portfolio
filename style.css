@@ -141,15 +141,34 @@ img {
 }
 
 /* Вертикальный ритм */
-.v-space.S { height: 0.5em; }
-.v-space.M { height: 2em; }
-.v-space.L { height: 4em; }
-.v-space.XL { height: 8em; }
+.v-space.S {
+    height: 0.5em;
+}
+
+.v-space.M {
+    height: 2em;
+}
+
+.v-space.L {
+    height: 4em;
+}
+
+.v-space.XL {
+    height: 8em;
+}
 
 @media (max-width: 768px) {
-    .v-space.M { height: 1em; }
-    .v-space.L { height: 2em; }
-    .v-space.XL { height: 4em; }
+    .v-space.M {
+        height: 1em;
+    }
+
+    .v-space.L {
+        height: 2em;
+    }
+
+    .v-space.XL {
+        height: 4em;
+    }
 }
 
 /* Шапка: аватар и контакты */
@@ -257,10 +276,21 @@ img {
     line-height: 1.32;
 }
 
-.experience-item:nth-child(2) { opacity: 0.85; }
-.experience-item:nth-child(3) { opacity: 0.65; }
-.experience-item:nth-child(4) { opacity: 0.45; }
-.experience-item:nth-child(5) { opacity: 0.3; }
+.experience-item:nth-child(2) {
+    opacity: 0.85;
+}
+
+.experience-item:nth-child(3) {
+    opacity: 0.65;
+}
+
+.experience-item:nth-child(4) {
+    opacity: 0.45;
+}
+
+.experience-item:nth-child(5) {
+    opacity: 0.3;
+}
 
 /* Галереи: общая сетка и медиа.
    Модификаторы ниже задают только колонки; на мобильных — одна колонка.
@@ -310,7 +340,7 @@ img {
         display: none;
     }
 
-    .work-gallery--mobile-scroll > img {
+    .work-gallery--mobile-scroll>img {
         scroll-snap-align: start;
     }
 }
@@ -338,7 +368,7 @@ img {
         grid-auto-columns: max-content;
     }
 
-    .work-gallery--kv-trio.work-gallery--mobile-scroll > img {
+    .work-gallery--kv-trio.work-gallery--mobile-scroll>img {
         width: auto;
         height: min(145vw, 75svh);
         max-width: none;
@@ -351,16 +381,17 @@ img {
 }
 
 /* Sochi: общая подгонка видео в обеих строках */
-.work-gallery--giga-sochi > video,
-.work-gallery--giga-sochi-row-2 > video {
+.work-gallery--giga-sochi>video,
+.work-gallery--giga-sochi-row-2>video {
     height: 100%;
     min-height: 0;
     object-fit: cover;
 }
 
 @media (max-width: 767px) {
-    .work-gallery--giga-sochi > video,
-    .work-gallery--giga-sochi-row-2 > video {
+
+    .work-gallery--giga-sochi>video,
+    .work-gallery--giga-sochi-row-2>video {
         height: auto;
         object-fit: contain;
     }
@@ -549,7 +580,7 @@ img {
     min-height: 0;
 }
 
-.b2b-journal-side > img {
+.b2b-journal-side>img {
     position: absolute;
     top: 0;
     left: 0;
@@ -557,7 +588,7 @@ img {
     object-fit: cover;
 }
 
-.b2b-journal-side > video {
+.b2b-journal-side>video {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -575,10 +606,95 @@ img {
         gap: var(--gallery-gap);
     }
 
-    .b2b-journal-side > img,
-    .b2b-journal-side > video {
+    .b2b-journal-side>img,
+    .b2b-journal-side>video {
         position: static;
         width: 100%;
         height: auto;
+    }
+}
+
+
+
+
+
+
+/* Галерея Stitch */
+
+.work-gallery--stitch {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.stitch-carousel {
+    display: contents;
+}
+
+.work-gallery--stitch img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Первая строка */
+
+.work-gallery--stitch>img {
+    grid-column: 1 / -1;
+    aspect-ratio: 3 / 1;
+}
+
+/* Вторая строка */
+
+.stitch-carousel>img:nth-child(-n+2) {
+    grid-column: span 2;
+    aspect-ratio: 4 / 5;
+}
+
+/* Третья строка */
+
+.stitch-carousel>img:nth-child(n+3) {
+    aspect-ratio: 2 / 3;
+}
+
+/* Мобильная версия */
+
+@media (max-width: 767px) {
+    .work-gallery--stitch {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .stitch-carousel {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: max-content;
+        grid-template-columns: none;
+        gap: 0.5em;
+
+        box-sizing: border-box;
+        width: calc(100% + 1.2em);
+        margin-left: -0.6em;
+        padding: 0 0.6em;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-padding-inline: 0.6em;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        align-items: start;
+    }
+
+    .stitch-carousel::-webkit-scrollbar {
+        display: none;
+    }
+
+    .stitch-carousel>img:nth-child(n) {
+        grid-column: auto;
+        width: auto;
+        height: min(110vw, 70svh);
+        max-width: none;
+        aspect-ratio: auto;
+        object-fit: contain;
+        scroll-snap-align: start;
     }
 }
