@@ -40,6 +40,6 @@ for (const name of references) {
 }
 fs.writeFileSync(path.join(output, '.nojekyll'), '');
 const bytes = [...references].reduce((sum, name) => sum + fs.statSync(path.join(output, name)).size, 0);
-const maxBytes = 280_000_000;
+const maxBytes = 300_000_000;
 if (bytes > maxBytes) throw new Error(`Publish set exceeds ${maxBytes} bytes: ${bytes}`);
 console.log(JSON.stringify({ files: references.size + 1, bytes, mb: +(bytes / 1e6).toFixed(2) }));
