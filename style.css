@@ -22,6 +22,14 @@ html {
     font-size: calc(var(--mobile-font-size-min) * 1px);
 }
 
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+
 @media (max-width: 768px) {
     html {
         line-height: 1.28;
@@ -308,7 +316,7 @@ img {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 0.5em;
+    border-radius: .5em;
 }
 
 @media (max-width: 767px) {
@@ -431,7 +439,7 @@ img {
 .promo-main,
 .promo-thumb {
     overflow: hidden;
-    border-radius: 0.5em;
+    border-radius: .5em;
 }
 
 .promo-main,
@@ -452,7 +460,7 @@ img {
     justify-content: center;
     width: 100%;
     overflow: hidden;
-    border-radius: 1em;
+    border-radius: .5em;
 }
 
 /* Обложка GenAI */
@@ -486,7 +494,7 @@ img {
     width: 65%;
     max-height: 90%;
     object-fit: contain;
-    border-radius: 1em;
+    border-radius: .5em;
 }
 
 @media (max-width: 767px) {
@@ -499,7 +507,7 @@ img {
     .work-cover--bughunters video {
         width: 100%;
         max-height: none;
-        border-radius: 0.4em;
+        border-radius: 0.5em;
     }
 }
 
@@ -696,5 +704,62 @@ img {
         aspect-ratio: auto;
         object-fit: contain;
         scroll-snap-align: start;
+    }
+}
+
+
+
+
+
+/* Спецпроект 12 апреля */
+
+.space-day-scene {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3.85 / 1;
+    margin-block: 1em;
+}
+
+/* Космический фон */
+
+.space-day-scene .space-day-stars {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5em;
+}
+
+/* Колонка поверх фона */
+
+.space-day-scene .space-day-speaker {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -59%) scale(1.95);
+
+    width: 40%;
+    height: auto;
+    max-height: 120%;
+    object-fit: contain;
+    border-radius: 0;
+}
+
+/* Мобильная версия */
+
+@media (max-width: 767px) {
+    .space-day-scene {
+        aspect-ratio: 2.4 / 1;
+        margin-block: 1.2em;
+    }
+
+    .space-day-scene .space-day-speaker {
+        width: 60%;
+        max-height: 125%;
+
+        .space-day-scene .space-day-speaker {
+            .space-day-scene .space-day-speaker {
+                transform: translate(-50%, -50%) scale(1.65);
+            }
+        }
     }
 }
