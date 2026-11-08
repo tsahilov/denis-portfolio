@@ -103,34 +103,34 @@
     ]
   },
   "images/genai-15.webp": {
-    "width": 3691,
-    "height": 2065,
-    "bytes": 3322848,
+    "width": 2760,
+    "height": 1544,
+    "bytes": 2714660,
     "variants": [
       {
         "file": "images/responsive/genai-15-384.webp",
         "width": 384,
-        "bytes": 19934
+        "bytes": 19764
       },
       {
         "file": "images/responsive/genai-15-768.webp",
         "width": 768,
-        "bytes": 61968
+        "bytes": 61224
       },
       {
         "file": "images/responsive/genai-15-1152.webp",
         "width": 1152,
-        "bytes": 117014
+        "bytes": 115238
       },
       {
         "file": "images/responsive/genai-15-1920.webp",
         "width": 1920,
-        "bytes": 240860
+        "bytes": 237080
       },
       {
         "file": "images/responsive/genai-15-3691.webp",
-        "width": 3691,
-        "bytes": 754876
+        "width": 2760,
+        "bytes": 474794
       }
     ]
   },
@@ -627,115 +627,105 @@
     ]
   },
   "images/giga-ban-10.webp": {
-    "width": 2264,
-    "height": 944,
-    "bytes": 1304178,
+    "width": 1698,
+    "height": 708,
+    "bytes": 798956,
     "variants": [
       {
         "file": "images/responsive/giga-ban-10-384.webp",
         "width": 384,
-        "bytes": 18616
+        "bytes": 18280
       },
       {
         "file": "images/responsive/giga-ban-10-768.webp",
         "width": 768,
-        "bytes": 51436
+        "bytes": 50600
       },
       {
         "file": "images/responsive/giga-ban-10-1152.webp",
         "width": 1152,
-        "bytes": 85582
-      },
-      {
-        "file": "images/responsive/giga-ban-10-1920.webp",
-        "width": 1920,
-        "bytes": 144400
+        "bytes": 83562
       },
       {
         "file": "images/responsive/giga-ban-10-2264.webp",
-        "width": 2264,
-        "bytes": 179510
+        "width": 1698,
+        "bytes": 128536
       }
     ]
   },
   "images/giga-ban-20.webp": {
-    "width": 1380,
-    "height": 944,
-    "bytes": 713332,
+    "width": 1035,
+    "height": 708,
+    "bytes": 447856,
     "variants": [
       {
         "file": "images/responsive/giga-ban-20-384.webp",
         "width": 384,
-        "bytes": 14704
+        "bytes": 14372
       },
       {
         "file": "images/responsive/giga-ban-20-768.webp",
         "width": 768,
-        "bytes": 33080
-      },
-      {
-        "file": "images/responsive/giga-ban-20-1152.webp",
-        "width": 1152,
-        "bytes": 54014
+        "bytes": 31888
       },
       {
         "file": "images/responsive/giga-ban-20-1380.webp",
-        "width": 1380,
-        "bytes": 68244
+        "width": 1035,
+        "bytes": 47224
       }
     ]
   },
   "images/giga-ban-30.webp": {
-    "width": 1826,
-    "height": 1252,
-    "bytes": 1010034,
+    "width": 1370,
+    "height": 939,
+    "bytes": 601136,
     "variants": [
       {
         "file": "images/responsive/giga-ban-30-384.webp",
         "width": 384,
-        "bytes": 19336
+        "bytes": 19164
       },
       {
         "file": "images/responsive/giga-ban-30-768.webp",
         "width": 768,
-        "bytes": 44522
+        "bytes": 43480
       },
       {
         "file": "images/responsive/giga-ban-30-1152.webp",
         "width": 1152,
-        "bytes": 70228
+        "bytes": 68086
       },
       {
         "file": "images/responsive/giga-ban-30-1826.webp",
-        "width": 1826,
-        "bytes": 123736
+        "width": 1370,
+        "bytes": 88216
       }
     ]
   },
   "images/giga-ban-40.webp": {
-    "width": 1824,
-    "height": 1252,
-    "bytes": 1286916,
+    "width": 1368,
+    "height": 939,
+    "bytes": 763216,
     "variants": [
       {
         "file": "images/responsive/giga-ban-40-384.webp",
         "width": 384,
-        "bytes": 15058
+        "bytes": 14410
       },
       {
         "file": "images/responsive/giga-ban-40-768.webp",
         "width": 768,
-        "bytes": 37618
+        "bytes": 36742
       },
       {
         "file": "images/responsive/giga-ban-40-1152.webp",
         "width": 1152,
-        "bytes": 63134
+        "bytes": 60692
       },
       {
         "file": "images/responsive/giga-ban-40-1824.webp",
-        "width": 1824,
-        "bytes": 118274
+        "width": 1368,
+        "bytes": 82554
       }
     ]
   },
@@ -1357,5 +1347,188 @@
       }
     ],
     "poster": "images/posters/b2b-30.webp"
+  },
+  "images/stitch-10.webp": {
+    "width": 2769,
+    "height": 917,
+    "bytes": 1312848,
+    "variants": [
+      {
+        "file": "images/responsive/stitch-10-768.webp",
+        "width": 768,
+        "bytes": 80104
+      },
+      {
+        "file": "images/responsive/stitch-10-1536.webp",
+        "width": 1536,
+        "bytes": 269604
+      },
+      {
+        "file": "images/responsive/stitch-10-2769.webp",
+        "width": 2769,
+        "bytes": 672214
+      }
+    ]
+  },
+  "images/stitch-20.webp": {
+    "width": 1365,
+    "height": 1749,
+    "bytes": 2312820,
+    "variants": [
+      {
+        "file": "images/responsive/stitch-20-384.webp",
+        "width": 384,
+        "bytes": 65110
+      },
+      {
+        "file": "images/responsive/stitch-20-768.webp",
+        "width": 768,
+        "bytes": 242238
+      },
+      {
+        "file": "images/responsive/stitch-20-1365.webp",
+        "width": 1365,
+        "bytes": 647496
+      }
+    ]
+  },
+  "images/stitch-30.webp": {
+    "width": 1365,
+    "height": 1749,
+    "bytes": 1195798,
+    "variants": [
+      {
+        "file": "images/responsive/stitch-30-384.webp",
+        "width": 384,
+        "bytes": 108110
+      },
+      {
+        "file": "images/responsive/stitch-30-768.webp",
+        "width": 768,
+        "bytes": 363062
+      },
+      {
+        "file": "images/responsive/stitch-30-1365.webp",
+        "width": 1365,
+        "bytes": 926878
+      }
+    ]
+  },
+  "images/stitch-40.webp": {
+    "width": 647,
+    "height": 969,
+    "bytes": 289408,
+    "variants": [
+      {
+        "file": "images/responsive/stitch-40-384.webp",
+        "width": 384,
+        "bytes": 28228
+      },
+      {
+        "file": "images/responsive/stitch-40-647.webp",
+        "width": 647,
+        "bytes": 62030
+      }
+    ]
+  },
+  "images/stitch-50.webp": {
+    "width": 776,
+    "height": 969,
+    "bytes": 898348,
+    "variants": [
+      {
+        "file": "images/responsive/stitch-50-384.webp",
+        "width": 384,
+        "bytes": 40304
+      },
+      {
+        "file": "images/responsive/stitch-50-768.webp",
+        "width": 768,
+        "bytes": 129094
+      },
+      {
+        "file": "images/responsive/stitch-50-776.webp",
+        "width": 776,
+        "bytes": 168286
+      }
+    ]
+  },
+  "images/stitch-60.webp": {
+    "width": 645,
+    "height": 968,
+    "bytes": 534478,
+    "variants": [
+      {
+        "file": "images/responsive/stitch-60-384.webp",
+        "width": 384,
+        "bytes": 31152
+      },
+      {
+        "file": "images/responsive/stitch-60-645.webp",
+        "width": 645,
+        "bytes": 89448
+      }
+    ]
+  },
+  "images/stitch-70.webp": {
+    "width": 620,
+    "height": 968,
+    "bytes": 765930,
+    "variants": [
+      {
+        "file": "images/responsive/stitch-70-384.webp",
+        "width": 384,
+        "bytes": 64628
+      },
+      {
+        "file": "images/responsive/stitch-70-620.webp",
+        "width": 620,
+        "bytes": 157348
+      }
+    ]
+  },
+  "images/space-10.webp": {
+    "width": 2769,
+    "height": 719,
+    "bytes": 68448,
+    "variants": [
+      {
+        "file": "images/responsive/space-10-768.webp",
+        "width": 768,
+        "bytes": 8242
+      },
+      {
+        "file": "images/responsive/space-10-1536.webp",
+        "width": 1536,
+        "bytes": 14620
+      },
+      {
+        "file": "images/responsive/space-10-2769.webp",
+        "width": 2769,
+        "bytes": 28020
+      }
+    ]
+  },
+  "images/space-20.webp": {
+    "width": 1615,
+    "height": 1614,
+    "bytes": 1889570,
+    "variants": [
+      {
+        "file": "images/responsive/space-20-480.webp",
+        "width": 480,
+        "bytes": 47022
+      },
+      {
+        "file": "images/responsive/space-20-960.webp",
+        "width": 960,
+        "bytes": 131280
+      },
+      {
+        "file": "images/responsive/space-20-1615.webp",
+        "width": 1615,
+        "bytes": 281324
+      }
+    ]
   }
 }
