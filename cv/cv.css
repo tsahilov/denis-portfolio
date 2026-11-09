@@ -1,0 +1,316 @@
+:root {
+    --text-color-RGB: 50, 50, 50;
+    --link-color-RGB: 0, 100, 255;
+    --hover-color-RGB: 0, 215, 100;
+    --background-color-RGB: 255, 255, 255;
+}
+
+
+/* CV is self-contained: portfolio styles are intentionally not imported. */
+.cv-page {
+    margin: 0;
+    padding: 32px 24px 64px;
+    font-family: "Inter", "Inter Fallback", Arial, sans-serif;
+    font-weight: 400;
+    color: rgba(var(--text-color-RGB), 1);
+    background-color: rgba(var(--background-color-RGB), 1);
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.35;
+}
+
+.cv-page *,
+.cv-page *::before,
+.cv-page *::after {
+    box-sizing: border-box;
+}
+
+.cv-nav {
+    max-width: 960px;
+    margin: 0 auto 24px;
+}
+
+a {
+    color: rgba(var(--link-color-RGB), 1);
+    text-decoration: underline;
+    text-decoration-thickness: 1.2px;
+    text-underline-offset: 0.25em;
+    text-decoration-color: rgba(var(--link-color-RGB), 1);
+    transition: color 0.5s ease, text-decoration-color 0.5s ease;
+}
+
+a:hover {
+    color: rgba(var(--hover-color-RGB), 1);
+    text-decoration-color: rgba(var(--hover-color-RGB), 1);
+    transition: color 0s ease, text-decoration-color 0s ease;
+}
+
+
+
+.cv-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 216px);
+    grid-template-areas:
+        "heading heading"
+        "intro contacts"
+        "divider divider"
+        "main sidebar";
+    grid-template-rows: auto auto auto 1fr;
+    column-gap: 48px;
+    row-gap: 32px;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 52px 56px 60px;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.cv-heading {
+    grid-area: heading;
+}
+
+.cv-photo {
+    display: block;
+    width: 88px;
+    height: 88px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cv-contacts {
+    grid-area: contacts;
+    font-style: normal;
+}
+
+.cv-intro {
+    grid-area: intro;
+    min-width: 0;
+}
+
+.cv-divider {
+    grid-area: divider;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    border-top: 1px solid #e2e2e2;
+}
+
+.cv-main {
+    grid-area: main;
+    min-width: 0;
+    align-self: first baseline;
+}
+
+.cv-sidebar {
+    grid-area: sidebar;
+    min-width: 0;
+    align-self: first baseline;
+}
+
+.cv-page h1 {
+    margin: 0 0 6px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.cv-role {
+    color: #737373;
+    font-size: 18px;
+}
+
+.cv-page p {
+    margin: 0 0 10px;
+}
+
+.cv-page p:last-child {
+    margin-bottom: 0;
+}
+
+.cv-section {
+    margin-top: 36px;
+}
+
+.cv-main > .cv-section:first-child {
+    margin-top: 0;
+}
+
+.cv-section>h2 {
+    margin: 0 0 20px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #737373;
+}
+
+.cv-page h3 {
+    margin: 0 0 1px;
+    font-size: 15px;
+    font-weight: 650;
+    line-height: 1.35;
+}
+
+.cv-entry+.cv-entry {
+    margin-top: 26px;
+}
+
+.cv-page .cv-company {
+    margin: 0;
+}
+
+.cv-page .cv-date {
+    /* margin: 3px 0 10px; */
+    color: #737373;
+    /* font-size: 13px; */
+}
+
+.cv-page .cv-list-label {
+    margin: 12px 0 0;
+}
+
+.cv-page ul {
+    margin: 0;
+    padding-left: 1.2em;
+}
+
+.cv-page li::marker {
+    font-size: 0.8em;
+}
+
+.cv-contacts p {
+    margin-bottom: 6px;
+}
+
+
+
+.cv-sidebar section+section {
+    margin-top: 28px;
+}
+
+.cv-sidebar h2 {
+    margin: 0 0 7px;
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 650;
+}
+
+.cv-courses {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.cv-page .cv-plain-list {
+    padding: 0;
+    list-style: none;
+}
+
+@media (max-width: 767px) {
+    .cv-page {
+        padding: 20px 12px 32px;
+        font-size: 15px;
+    }
+
+    .cv-nav {
+        margin-bottom: 20px;
+        padding-inline: 4px;
+    }
+
+    .cv-card {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas: "heading""contacts""intro""divider""main""sidebar";
+        grid-template-rows: auto;
+        gap: 28px;
+        padding: 28px 22px 36px;
+        border-radius: 6px;
+    }
+
+    .cv-page h1 {
+        font-size: clamp(25px, 6.5vw, 32px);
+    }
+
+    .cv-role {
+        font-size: 16px;
+    }
+
+    .cv-section {
+        margin-top: 32px;
+    }
+
+    .cv-courses {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+    }
+
+    .cv-sidebar {
+        padding-top: 28px;
+        border-top: 1px solid #e2e2e2;
+    }
+}
+
+@media print {
+    .cv-page {
+        padding: 0;
+        font-size: 10pt;
+        color: #000;
+    }
+
+    .cv-nav {
+        display: none;
+    }
+
+    .cv-card {
+        display: block;
+        max-width: none;
+        padding: 0;
+        border: 0;
+    }
+
+    .cv-heading, .cv-contacts {
+        margin-bottom: 18pt;
+    }
+
+    .cv-divider {
+        margin-block: 18pt;
+    }
+
+    .cv-section, .cv-sidebar {
+        margin-top: 18pt;
+    }
+
+    .cv-sidebar {
+        columns: 2;
+        column-gap: 24pt;
+    }
+
+    .cv-sidebar section, .cv-entry, .cv-courses>div {
+        break-inside: avoid;
+    }
+
+    .cv-sidebar section+section {
+        margin-top: 14pt;
+    }
+
+    .cv-page h2, .cv-page h3 {
+        break-after: avoid;
+    }
+
+    .cv-page a {
+        color: inherit;
+    }
+
+    .cv-page p, .cv-page li {
+        orphans: 3;
+        widows: 3;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cv-page a {
+        transition: none;
+    }
+}

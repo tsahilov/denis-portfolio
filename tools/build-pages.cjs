@@ -2,8 +2,8 @@ const fs = require('node:fs');
 const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const output = path.join(root, '.pages-dist');
-const textFiles = ['index.html', 'style.css', 'media.js', 'fonts/inter.css'];
-const fixedFiles = ['CNAME', 'index.html', 'style.css', 'media.js', 'fonts/inter.css'];
+const textFiles = ['index.html', 'style.css', 'media.js', 'fonts/inter.css', 'cv/index.html', 'cv/cv.css'];
+const fixedFiles = ['CNAME', ...textFiles];
 const references = new Set(fixedFiles);
 
 function requireFile(name) {
