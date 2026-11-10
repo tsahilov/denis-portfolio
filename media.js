@@ -8,6 +8,18 @@
     const blocked = new WeakSet();
     const automatic = () => !motion.matches && !connection?.saveData;
 
+    // Space Day uses a keyboard-accessible button inside its circular mask.
+    // All other videos retain their existing native-control behavior.
+    function setControls(video, enabled) {
+        if (!video.hasAttribute('data-custom-controls')) {
+            video.controls = enabled;
+            return;
+        }
+        video.controls = false;
+        const button = video.parentElement.querySelector('.space-day-play');
+        if (button) button.hidden = !enabled;
+    }
+
     function hydrate(video) {
         // Set the poster before assigning src, including on a fast scroll past the nearby observer.
         if (!video.poster) video.poster = video.dataset.poster;
@@ -26,7 +38,7 @@
     }
 
     function update(video) {
-        video.controls = !automatic() || blocked.has(video);
+        setControls(video, !automatic() || blocked.has(video));
         if (document.hidden || !visible.has(video)) {
             attempts.delete(video);
             video.pause();
@@ -34,7 +46,7 @@
         }
         if (!automatic() || blocked.has(video) || attempts.has(video)) return;
         // Never enable native controls while the automatic play request is pending.
-        video.controls = false;
+        setControls(video, false);
         hydrate(video);
         video.muted = true;
         const attempt = {};
@@ -44,22 +56,41 @@
             attempts.delete(video);
             // Preferences and visibility can change while play() is pending.
             if (document.hidden || !visible.has(video) || !automatic()) video.pause();
-            else video.controls = false;
+            else setControls(video, false);
         }).catch(error => {
             if (attempts.get(video) !== attempt) return;
             attempts.delete(video);
             // pause() during scrolling can cancel play(); that is not an autoplay denial.
             if (error.name === 'AbortError' || document.hidden || !visible.has(video)) return;
             blocked.add(video);
-            video.controls = true;
+            setControls(video, true);
         });
     }
+
+    videos.filter(video => video.hasAttribute('data-custom-controls')).forEach(video => {
+        const button = video.parentElement.querySelector('.space-day-play');
+        button.addEventListener('click', async () => {
+            button.disabled = true;
+            hydrate(video);
+            video.muted = true;
+            try {
+                await video.play();
+                if (document.hidden || ('IntersectionObserver' in window && !visible.has(video))) {
+                    video.pause();
+                } else setControls(video, false);
+            } catch {
+                setControls(video, true);
+            } finally {
+                button.disabled = false;
+            }
+        });
+    });
 
     if (!('IntersectionObserver' in window)) {
         videos.forEach(video => {
             video.poster = video.dataset.poster;
             hydrate(video);
-            video.controls = true;
+            setControls(video, true);
         });
         return;
     }
