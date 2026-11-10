@@ -100,13 +100,13 @@ a:hover {
 .cv-main {
     grid-area: main;
     min-width: 0;
-    align-self: first baseline;
+    align-self: start;
 }
 
 .cv-sidebar {
     grid-area: sidebar;
     min-width: 0;
-    align-self: first baseline;
+    align-self: start;
 }
 
 .cv-page h1 {
@@ -195,7 +195,18 @@ a:hover {
     margin: 0 0 7px;
     font-size: 15px;
     line-height: 1.4;
-    font-weight: 650;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+    .cv-sidebar {
+        /* Skip the experience label's line box and its bottom margin. */
+        padding-top: calc(12px * 1.35 + 20px);
+    }
+
+    .cv-sidebar > section:first-child > h2 {
+        line-height: 1.35;
+    }
 }
 
 .cv-courses {
