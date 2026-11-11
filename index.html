@@ -10,6 +10,7 @@
     <link rel="preload" href="fonts/InterVariable-portfolio.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="fonts/inter.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="images/responsive/space-5-6.webp" as="image" fetchpriority="low">
     <script src="media.js" defer></script>
 </head>
 
@@ -387,7 +388,7 @@
     </div>
 
 
-
+    vi
     <div class="v-space XL"></div>
 
     <div class="wrapper">
@@ -402,20 +403,16 @@
             <div class="v-space S"></div>
 
             <div class="work-gallery work-gallery--2">
-                <video data-lazy-video muted loop playsinline preload="none" width="4636" height="4636"
+                <video data-lazy-video muted loop playsinline preload="none" width="1024" height="1024"
                     data-poster="images/posters/candinsky-10.webp">
-                    <source data-src="video/optimized/candinsky-10-1834.mp4"
-                        data-variants='[{"src":"video/optimized/candinsky-10-768.mp4","width":768},{"src":"video/optimized/candinsky-10-1536.mp4","width":1536},{"src":"video/optimized/candinsky-10-1834.mp4","width":1834}]'
-                        type="video/mp4">
+                    <source data-src="video/optimized/candinsky-10-compressed.mp4" type="video/mp4">
                 </video>
-                <noscript><a href="video/optimized/candinsky-10-768.mp4">Смотреть видео</a></noscript>
-                <video data-lazy-video muted loop playsinline preload="none" width="4636" height="4636"
+
+                <video data-lazy-video muted loop playsinline preload="none" width="1024" height="1024"
                     data-poster="images/posters/candinsky-20.webp">
-                    <source data-src="video/optimized/candinsky-20-1834.mp4"
-                        data-variants='[{"src":"video/optimized/candinsky-20-768.mp4","width":768},{"src":"video/optimized/candinsky-20-1536.mp4","width":1536},{"src":"video/optimized/candinsky-20-1834.mp4","width":1834}]'
-                        type="video/mp4">
+                    <source data-src="video/optimized/candinsky-20-compressed.mp4" type="video/mp4">
                 </video>
-                <noscript><a href="video/optimized/candinsky-20-768.mp4">Смотреть видео</a></noscript>
+                <noscript><a href="video/optimized/candinsky-20-compressed.mp4">Смотреть видео</a></noscript>
             </div>
         </article>
     </div>
@@ -737,38 +734,13 @@
 
             <div class="work-gallery">
                 <div class="space-day-composition" id="space-day">
-                    <div class="space-day-orbit space-day-orbit--one">
-                        <video data-lazy-video data-custom-controls muted loop playsinline preload="none" width="480"
-                            height="480" data-poster="images/posters/space-vid-one.webp"
-                            aria-label="Анимация на колонке — первый ролик">
-                            <source data-src="video/optimized/space-vid-one-720.mp4"
-                                data-variants='[{"src":"video/optimized/space-vid-one-480.mp4","width":480},{"src":"video/optimized/space-vid-one-720.mp4","width":720}]'
-                                type="video/mp4">
-                        </video>
-                        <button class="space-day-play" type="button" hidden
-                            aria-label="Воспроизвести первый ролик">▶</button>
-                    </div>
-                    <div class="space-day-orbit space-day-orbit--two">
-                        <video data-lazy-video data-custom-controls muted loop playsinline preload="none" width="480"
-                            height="480" data-poster="images/posters/space-vid-two.webp"
-                            aria-label="Анимация на колонке — второй ролик">
-                            <source data-src="video/optimized/space-vid-two-720.mp4"
-                                data-variants='[{"src":"video/optimized/space-vid-two-480.mp4","width":480},{"src":"video/optimized/space-vid-two-720.mp4","width":720}]'
-                                type="video/mp4">
-                        </video>
-                        <button class="space-day-play" type="button" hidden
-                            aria-label="Воспроизвести второй ролик">▶</button>
-                    </div>
                     <div class="space-day-scene">
                         <img src="images/responsive/space-10-2769.webp"
                             srcset="images/responsive/space-10-768.webp 768w, images/responsive/space-10-1536.webp 1536w, images/responsive/space-10-2769.webp 2769w"
                             sizes="auto, 100vw" width="2769" height="719" class="space-day-stars" alt="" loading="lazy"
                             decoding="async">
 
-                        <img src="images/responsive/space-20-1615.webp"
-                            srcset="images/responsive/space-20-480.webp 480w, images/responsive/space-20-960.webp 960w, images/responsive/space-20-1615.webp 1615w"
-                            sizes="auto, 100vw" width="1615" height="1614" class="space-day-speaker"
-                            alt="Умная колонка с пиксельной анимацией" loading="lazy" decoding="async">
+                        <div class="space-day-speaker" role="img" aria-label="Умная колонка с пиксельной анимацией"></div>
                     </div>
                 </div>
             </div>

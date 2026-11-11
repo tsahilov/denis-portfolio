@@ -737,71 +737,16 @@ img {
 /* Спецпроект 12 апреля */
 
 .space-day-composition {
-    position: relative;
     display: flow-root;
 }
 
-.space-day-orbit {
-    position: absolute;
-    z-index: 2;
-    width: 19.5%;
-    aspect-ratio: 1;
-    overflow: hidden;
-    border-radius: 50%;
-    isolation: isolate;
-}
-
-.space-day-orbit--one {
-    left: 5%;
-    top: 50%;
-}
-
-.space-day-orbit--two {
-    right: 3.5%;
-    top: -15%;
-}
-
-.space-day-orbit video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-    /* Cover the antialiased white rim baked into the original frames. */
-    transform: scale(1.015);
-}
-
-.space-day-play {
-    position: absolute;
-    inset: 0;
-    margin: auto;
-    width: 3em;
-    height: 3em;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    color: #fff;
-    background: #0009;
-    font: inherit;
-    cursor: pointer;
-}
-
-.space-day-play[hidden] {
-    display: none;
-}
-
-.space-day-play:focus-visible {
-    outline: 3px solid #fff;
-    outline-offset: 4px;
-}
-
 .space-day-scene {
+    --scene-aspect: 3.85;
     position: relative;
     width: 100%;
-    aspect-ratio: 3.85 / 1;
+    aspect-ratio: var(--scene-aspect);
     margin-block: 1em;
 }
-
-/* Космический фон */
 
 .space-day-scene .space-day-stars {
     width: 100%;
@@ -810,67 +755,42 @@ img {
     border-radius: 0.5em;
 }
 
-/* Колонка поверх фона */
-
 .space-day-scene .space-day-speaker {
+    --speaker-width: 40%;
+    --speaker-height-limit: 120%;
     position: absolute;
     z-index: 3;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -59%) scale(1.95);
-
-    width: 40%;
-    height: auto;
-    max-height: 120%;
-    object-fit: contain;
-    border-radius: 0;
+    /* Match the old image's object-fit: contain box after its height cap. */
+    width: min(var(--speaker-width), calc(var(--speaker-height-limit) / var(--scene-aspect) * 1615 / 1614));
+    aspect-ratio: 1615 / 1614;
+    background: url("images/responsive/space-5-6.webp") left center / 200% 100% no-repeat;
+    animation: space-day-speaker-frames 1s steps(1, end) infinite;
 }
 
-/* Мобильная версия */
+@keyframes space-day-speaker-frames {
+    50% { background-position: right center; }
+}
 
 @media (max-width: 767px) {
-    .space-day-composition {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        column-gap: 0.5em;
-        row-gap: 1.4em;
-    }
-
-    .space-day-orbit {
-        position: relative;
-        top: auto;
-        left: auto;
-        right: auto;
-        width: 100%;
-        min-width: 0;
-    }
-
     .space-day-scene {
-        grid-column: 1 / -1;
-        aspect-ratio: 2.4 / 1;
+        --scene-aspect: 2.4;
         margin-block: 1.2em;
     }
 
     .space-day-scene .space-day-speaker {
-        width: 60%;
-        max-height: 125%;
-
-        .space-day-scene .space-day-speaker {
-            .space-day-scene .space-day-speaker {
-                transform: translate(-50%, -50%) scale(1.65);
-            }
-        }
+        --speaker-width: 60%;
+        --speaker-height-limit: 125%;
     }
 }
 
-
-
-
-
-
-
-
-
+@media (prefers-reduced-motion: reduce) {
+    .space-day-scene .space-day-speaker {
+        animation: none;
+    }
+}
 
 /* Футер */
 
