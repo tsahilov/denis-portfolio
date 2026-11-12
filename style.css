@@ -538,7 +538,9 @@ img {
 .work-gallery--ddd {
     --gallery-columns: minmax(0, 294fr) minmax(0, 294fr) minmax(0, 155fr) minmax(0, 235fr);
     aspect-ratio: 3.36 / 1;
+    grid-template-rows: minmax(0, 1fr);
     align-items: stretch;
+    overflow: hidden;
 }
 
 .work-gallery--ddd img {
@@ -579,6 +581,8 @@ img {
 @media (max-width: 767px) {
     .work-gallery--ddd {
         aspect-ratio: auto;
+        grid-template-rows: none;
+        overflow: visible;
     }
 
     .ddd-column,
